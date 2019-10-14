@@ -17,7 +17,7 @@ class PackageListSeeder extends Seeder
             // 1
             [
                 'user_id' => 2,
-                'package_id' => 3,
+                'package_id' => 2,
                 'expiry_date' => '2020-03-31 00:00:00'
             ]
         ]);
@@ -25,7 +25,7 @@ class PackageListSeeder extends Seeder
         PackageListRentProduct::insert([
             [
                 'package_list_id' => 1,
-                'package_list_id' => 2,
+                'product_id' => 2,
                 'amount' => 1,
                 'swapped_at' => null
             ]

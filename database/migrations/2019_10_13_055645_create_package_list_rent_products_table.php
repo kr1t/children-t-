@@ -19,7 +19,7 @@ class CreatePackageListRentProductsTable extends Migration
             $table->bigInteger('package_list_id')->unsigned()->default(1);
             $table->foreign('package_list_id')
                 ->references('id')
-                ->on('packages')
+                ->on('package_lists')
                 ->onDelete('cascade');
             //fk
             $table->bigInteger('product_id')->unsigned()->default(1);
