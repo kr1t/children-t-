@@ -17,6 +17,7 @@ class CreateProductPricesTable extends Migration
             $table->bigIncrements('id');
             $table->string('description');
             $table->integer('price');
+            $table->float('range', 10, 2)->default(0.00);
 
             //fk
             $table->bigInteger('product_id')->unsigned()->default(1);

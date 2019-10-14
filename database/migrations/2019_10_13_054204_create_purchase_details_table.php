@@ -16,8 +16,8 @@ class CreatePurchaseDetailsTable extends Migration
         Schema::create('purchase_details', function (Blueprint $table) {
             $table->bigIncrements('id');
             //fk
-            $table->bigInteger('purechase_id')->unsigned()->default(1);
-            $table->foreign('purechase_id')
+            $table->bigInteger('purchase_id')->unsigned()->default(1);
+            $table->foreign('purchase_id')
                 ->references('id')
                 ->on('purchases')
                 ->onDelete('cascade');
@@ -26,6 +26,18 @@ class CreatePurchaseDetailsTable extends Migration
             $table->foreign('product_id')
                 ->references('id')
                 ->on('products')
+                ->onDelete('cascade');
+
+            $table->bigInteger('product_amount_id')->unsigned()->default(1);
+            $table->foreign('product_amount_id')
+                ->references('id')
+                ->on('product_amounts')
+                ->onDelete('cascade');
+
+            $table->bigInteger('product_price_id')->unsigned()->default(1);
+            $table->foreign('product_price_id')
+                ->references('id')
+                ->on('product_prices')
                 ->onDelete('cascade');
 
             $table->integer('amount');

@@ -18,7 +18,6 @@ class CreateAddressesTable extends Migration
             $table->text('information');
             $table->integer('amphoe_id');
             $table->string('mobile_number');
-            $table->boolean('default');
 
             //fk
             $table->bigInteger('user_id')->unsigned()->default(1);
@@ -27,6 +26,11 @@ class CreateAddressesTable extends Migration
                 ->on('users')
                 ->onDelete('cascade');
             $table->timestamps();
+        });
+
+        Schema::table('users', function (Blueprint $table) {
+            //fk
+            $table->bigInteger('default_address_id')->nullable();
         });
     }
 

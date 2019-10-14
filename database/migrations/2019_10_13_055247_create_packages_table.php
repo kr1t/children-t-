@@ -17,7 +17,7 @@ class CreatePackagesTable extends Migration
             $table->bigIncrements('id');
             $table->string('description');
             $table->integer('price');
-            $table->float('rent_time', 2);
+            $table->float('rent_time',  10, 2);
             $table->integer('amount_limit');
             $table->timestamps();
         });

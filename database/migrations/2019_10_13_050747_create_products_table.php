@@ -18,8 +18,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('img_url');
-            $table->float('from_age', 2);
-            $table->float('to_age', 2);
+            $table->float('from_age', 10, 2);
+            $table->float('to_age', 10, 2);
             $table->integer('deposit');
             $table->string('youtube_url');
 
