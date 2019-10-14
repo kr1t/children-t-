@@ -25,9 +25,9 @@ class PackageListSeeder extends Seeder
         PackageListRentProduct::insert([
             [
                 'package_list_id' => 1,
-                'product_id' => 2,
-                'amount' => 1,
-                'swapped_at' => null
+                'product_id' => 1,
+                'amount' => 4,
+                'swapped_at' => '2019-10-14 00:00:00'
             ]
         ]);
     }
