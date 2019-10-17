@@ -19,6 +19,7 @@ class CreatePackagesTable extends Migration
             $table->integer('price');
             $table->float('rent_time',  10, 2);
             $table->integer('amount_limit');
+            $table->integer('limit');
             $table->timestamps();
         });
     }

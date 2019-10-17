@@ -33,6 +33,7 @@ class CreateCategoriesTable extends Migration
                 ->references('id')
                 ->on('category_types')
                 ->onDelete('cascade');
+                
             $table->timestamps();
         });
     }

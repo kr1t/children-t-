@@ -17,12 +17,14 @@ class UserSeeder extends Seeder
                 'email' => 'admin@childrent.com',
                 'password' => bcrypt('123456'),
                 'name' => 'admin',
+                'mobile_number'=>'09000000000',
                 'role_id' => 2,
                 'default_address_id' => null
             ],
             [
                 'email' => 'tester@childrent.com',
                 'password' => bcrypt('123456'),
+                'mobile_number'=>'09000000001',
                 'name' => 'tester',
                 'role_id' => 1,
                 'default_address_id' => 1

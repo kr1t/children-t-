@@ -23,7 +23,7 @@ class PurchaseDetailSeeder extends Seeder
             ],
             [
                 'purchase_id' => 1,
-                'product_id' => 1,
+                'product_id' => 2,
                 'amount' => 10,
                 'product_amount_id' => 2,
                 'product_price_id' => 1,

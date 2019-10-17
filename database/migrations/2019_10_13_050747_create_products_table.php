@@ -28,6 +28,7 @@ class CreateProductsTable extends Migration
                 ->references('id')
                 ->on('categories')
                 ->onDelete('cascade');
+                
             $table->bigInteger('brand_id')->unsigned()->default(1);
             $table->foreign('brand_id')
                 ->references('id')

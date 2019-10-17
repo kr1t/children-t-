@@ -24,8 +24,6 @@ class CreateArticlesTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
-            $table->integer('rating');
-            $table->string('comment');
             $table->timestamps();
         });
     }

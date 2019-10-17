@@ -18,14 +18,16 @@ class PackageSeeder extends Seeder
                 'description' => '3 เดือน',
                 'price' => 1500,
                 'rent_time' => 0.03,
-                'amount_limit' => 1
+                'amount_limit' => 1,
+                'limit' => 3
             ],
             // 2
             [
                 'description' => '6 เดือน',
                 'price' => 4000,
                 'rent_time' => 0.06,
-                'amount_limit' => 1
+                'amount_limit' => 1,
+                'limit' => 6
             ]
         ]);
     }

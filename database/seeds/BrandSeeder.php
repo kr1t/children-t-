@@ -12,10 +12,11 @@ class BrandSeeder extends Seeder
      */
     public function run()
     {
+       
         Brand::insert([
             // 1
             [
-                'name' => 'no brand',
+                'name' => 'ไม่มีหมวดหมู่',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'no-brand'

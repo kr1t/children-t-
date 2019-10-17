@@ -25,7 +25,8 @@ class DatabaseSeeder extends Seeder
             PurchaseDetailSeeder::class,
             ReviewSeeder::class,
             PackageSeeder::class,
-            PackageListSeeder::class,
+            PackageListSeeder::class
+
         ]);
     }
 }

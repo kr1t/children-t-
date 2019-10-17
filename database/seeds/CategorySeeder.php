@@ -48,6 +48,14 @@ class CategorySeeder extends Seeder
                 'slug' => 'student',
                 'category_type_id' => 1
             ],
+            // 3
+            [
+                'name' => 'ฝึกทักษะ',
+                'description' => 'คำอธิบาย',
+                'img_url' => '/images/categories/student.png',
+                'slug' => 'IQ',
+                'category_type_id' => 2
+            ],
         ]);
     }
 }

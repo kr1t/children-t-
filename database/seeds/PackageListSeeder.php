@@ -26,6 +26,7 @@ class PackageListSeeder extends Seeder
             [
                 'package_list_id' => 1,
                 'product_id' => 1,
+                'product_amount_id' => 1,
                 'amount' => 4,
                 'swapped_at' => '2019-10-14 00:00:00'
             ]

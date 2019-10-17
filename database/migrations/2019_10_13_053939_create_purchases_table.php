@@ -29,7 +29,8 @@ class CreatePurchasesTable extends Migration
                 ->references('id')
                 ->on('addresses')
                 ->onDelete('cascade');
-            //fk
+            
+                
             $table->bigInteger('address_return_id')->unsigned()->default(1);
             $table->foreign('address_id', 'ad2')
                 ->references('id')

@@ -27,8 +27,15 @@ class CreatePackageListRentProductsTable extends Migration
                 ->references('id')
                 ->on('products')
                 ->onDelete('cascade');
+
+            $table->bigInteger('product_amount_id')->unsigned()->default(1);
+            $table->foreign('product_amount_id')
+                ->references('id')
+                ->on('product_amounts')
+                ->onDelete('cascade');
+                
             $table->integer('amount');
-            $table->timestamp('swapped_at');
+            $table->timestamp('swapped_at')->nullable();
             $table->timestamps();
         });
     }

@@ -19,7 +19,7 @@ class ProductAmountSeed extends Seeder
                 'product_id' => 1
             ],
             [
-                'name' => 'size M',
+                'name' => 'size L',
                 'amount' => 14,
                 'product_id' => 1
             ]
