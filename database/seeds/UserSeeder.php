@@ -28,6 +28,15 @@ class UserSeeder extends Seeder
                 'name' => 'tester',
                 'role_id' => 1,
                 'default_address_id' => 1
+            ],
+
+            [
+                'email' => 'tabc@hotmail.com',
+                'password' => bcrypt('123456'),
+                'mobile_number'=>'09000000601',
+                'name' => 'tesfter',
+                'role_id' => 1,
+                'default_address_id' => null
             ]
         ]);
     }

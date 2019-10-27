@@ -13,49 +13,48 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        //หมวดหมู่แรก
-        CategoryType::insert([
-            // 1
-            [
-                'name' => 'เครื่องแต่งกาย',
-                'description' => 'คำอธิบาย',
-                'img_url' => '/images/categories/costume.png',
-                'slug' => 'costume'
-            ],
-            // 2
-            [
-                'name' => 'ของเล่น',
-                'description' => 'คำอธิบาย',
-                'img_url' => '/images/categories/toy.png',
-                'slug' => 'toys'
-            ]
-        ]);
-        // หมวดหมู่ใน
+
+        // หมวดหมู่
         Category::insert([
             // 1
             [
-                'name' => 'ชุดแฟนซี',
-                'description' => 'คำอธิบาย',
-                'img_url' => '/images/categories/fancy.png',
-                'slug' => 'fancy',
-                'category_type_id' => 1
+                'name' => 'ของเล่นเสริมพัฒนาการ',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'toy'
             ],
             // 2
             [
-                'name' => 'ชุดนักเรียน',
-                'description' => 'คำอธิบาย',
-                'img_url' => '/images/categories/student.png',
-                'slug' => 'student',
-                'category_type_id' => 1
+                'name' => 'รถเข็นเด็ก',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'stroller'
             ],
             // 3
             [
-                'name' => 'ฝึกทักษะ',
-                'description' => 'คำอธิบาย',
-                'img_url' => '/images/categories/student.png',
-                'slug' => 'IQ',
-                'category_type_id' => 2
+                'name' => 'ตู้แช่นม',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'freezer'
             ],
+            [
+                'name' => 'เครื่องแต่งกาย',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'costume'
+            ],
+            [
+                'name' => 'คอกกั้นเด็ก',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'child-barrier'
+            ],
+            [
+                'name' => 'คาร์ซีท',
+                'description' => '',
+                'img_url' => '',
+                'slug' => 'car-seat'
+            ]
         ]);
     }
 }
