@@ -12,7 +12,11 @@
 <script>
 export default {
   name: "HeadBar",
-
+  data() {
+    return {
+      domain: ".com"
+    };
+  },
   props: ["title", "to"]
 };
 </script>

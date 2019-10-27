@@ -23,8 +23,16 @@ export const actions = {
   async fetch({ commit }) {
     try {
       const { data } = await axios.get("/api/categories")
-
       commit(types.FETCH_CAT, { data })
+    } catch (e) {
+      console.log(e)
+    }
+  },
+  async del({ dispatch }, id) {
+    console.log("คุณกด id" + id)
+    try {
+      const { data } = await axios.delete(`/api/categories/${id}`)
+      dispatch("fetch")
     } catch (e) {
       console.log(e)
     }

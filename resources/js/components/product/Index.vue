@@ -2,6 +2,10 @@
   <div>
     <div class="container">
       <head-bar title="สินค้าแนะนำประจำวันนี้" to="products" />
+      <pre>
+      {{categories}}
+
+      </pre>
       <div class="row">
         <div class="col-md-3" v-for="(product, index) in products" :key="index">
           <product-card :product="product" />
@@ -21,7 +25,8 @@ export default {
   },
   computed: {
     ...mapGetters({
-      products: "product/products"
+      products: "product/products",
+      categories: "category/categories"
     })
   },
   methods: {
@@ -34,6 +39,6 @@ export default {
   }
 };
 </script>
-ห
+
 <style>
 </style>

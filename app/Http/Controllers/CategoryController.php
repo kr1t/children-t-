@@ -47,7 +47,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
-        //
+        return '5555';
     }
 
     /**
@@ -81,6 +81,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        //
+        $category->delete();
+        return 'delete complete';
     }
 }

@@ -34,7 +34,6 @@ export default [
       { path: "password", name: "settings.password", component: page("settings/password.vue") }
     ]
   },
-
   {
     path: "/products",
     name: "product.all",
