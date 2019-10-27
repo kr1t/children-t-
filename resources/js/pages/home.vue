@@ -1,15 +1,28 @@
 <template>
-  <card :title="$t('home')">
-    {{ $t('you_are_logged_in') }}
-  </card>
+  <div>
+    <banner style="margin-top: -16px;" />
+    <category />
+    <step />
+    <product />
+  </div>
 </template>
 
 <script>
-export default {
-  middleware: 'auth',
+import Banner from "~/components/home/Banner";
+import Category from "~/components/category/Index";
+import Step from "~/components/step/Index";
+import Product from "~/components/product/Index";
 
-  metaInfo () {
-    return { title: this.$t('home') }
+export default {
+  middleware: "auth",
+  components: {
+    Banner,
+    Category,
+    Step,
+    Product
+  },
+  metaInfo() {
+    return { title: "หน้าแรก" };
   }
-}
+};
 </script>

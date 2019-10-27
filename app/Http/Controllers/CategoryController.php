@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $cats = Category::get();
+        return $cats;
     }
 
     /**
