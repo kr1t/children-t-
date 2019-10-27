@@ -1,21 +1,24 @@
 <template>
   <div class="main-layout">
     <navbar />
-
-    <div class="container mt-4">
-      <child />
-    </div>
+    <navbar-sub />
+    <child />
   </div>
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
+import Navbar from "~/components/Navbar";
+import NavbarSub from "~/components/NavbarSub";
 
 export default {
-  name: 'MainLayout',
+  name: "MainLayout",
 
   components: {
-    Navbar
+    Navbar,
+    NavbarSub
   }
-}
+};
 </script>
+<style>
+@import "~/css/main.scss";
+</style>

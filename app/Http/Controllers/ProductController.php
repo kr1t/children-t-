@@ -12,9 +12,17 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $products = Product::get();
+        if (!$request->all) {
+            $products = Product::get()->take(4);
+        }
+        foreach ($products as $product) {
+            $product->price;
+        }
+
+        return $products;
     }
 
     /**
@@ -23,9 +31,7 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
-        //
-    }
+    { }
 
     /**
      * Store a newly created resource in storage.
@@ -46,7 +52,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        $product->prices;
+        $product->category->type;
+        return $product;
     }
 
     /**
