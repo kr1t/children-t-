@@ -57,6 +57,21 @@ export default [
     component: page("product/show.vue")
   },
   {
+    path: "/howto",
+    name: "howto",
+    component: page("howto/index.vue")
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: page("about/index.vue")
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: page("contact/index.vue")
+  },
+  {
     path: "/category/:slug",
     name: "category.show",
     component: page("category/show.vue")

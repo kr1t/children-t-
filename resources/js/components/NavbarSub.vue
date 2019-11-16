@@ -19,9 +19,9 @@ export default {
         { name: "สินค้า", to: "" },
         { name: "รีวิว", to: "" },
         { name: "แพ็คเกจ", to: "" },
-        { name: "วิธีการเช่า", to: "" },
-        { name: "เกี่ยวกับเรา", to: "" },
-        { name: "ติดต่อเรา", to: "", class: "pr-0" }
+        { name: "วิธีการเช่า", to: "/howto" },
+        { name: "เกี่ยวกับเรา", to: "/about" },
+        { name: "ติดต่อเรา", to: "/contact", class: "pr-0" }
       ]
     };
   }

@@ -2,22 +2,32 @@
   <div class="main-layout">
     <navbar />
     <navbar-sub />
-    <child />
+    <div class="min-h-700">
+      <child />
+    </div>
+
+    <footer-app/>
+    
   </div>
 </template>
 
 <script>
 import Navbar from "~/components/Navbar";
 import NavbarSub from "~/components/NavbarSub";
+import FooterApp from "~/components/Footer";
 
 export default {
   name: "MainLayout",
 
   components: {
     Navbar,
-    NavbarSub
+    NavbarSub,
+    FooterApp
   }
 };
 </script>
-<style>
+<style scoped>
+.min-h-700{
+  min-height: 750px;
+}
 </style>
