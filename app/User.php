@@ -19,7 +19,7 @@ class User extends Authenticatable implements JWTSubject //, MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'mobile_number', 'default_address_id'
     ];
 
     /**
@@ -56,7 +56,7 @@ class User extends Authenticatable implements JWTSubject //, MustVerifyEmail
      */
     public function getPhotoUrlAttribute()
     {
-        return 'https://www.gravatar.com/avatar/'.md5(strtolower($this->email)).'.jpg?s=200&d=mm';
+        return 'https://www.gravatar.com/avatar/' . md5(strtolower($this->email)) . '.jpg?s=200&d=mm';
     }
 
     /**
@@ -104,5 +104,12 @@ class User extends Authenticatable implements JWTSubject //, MustVerifyEmail
     public function getJWTCustomClaims()
     {
         return [];
+    }
+
+
+
+    public function addresses()
+    {
+        return $this->hasMany('App\Address');
     }
 }

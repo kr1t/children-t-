@@ -35,7 +35,14 @@ class AddressController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $address = Address::create($request->all());
+
+        if ($request->def) {
+            $request->user()->update([
+                "default_address_id" => $address->id
+            ]);
+        }
+        return $address;
     }
 
     /**
@@ -80,6 +87,7 @@ class AddressController extends Controller
      */
     public function destroy(Address $address)
     {
-        //
+        $address->delete();
+        return 'del';
     }
 }

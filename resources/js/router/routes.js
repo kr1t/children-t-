@@ -31,6 +31,13 @@ export default [
     children: [
       { path: "", redirect: { name: "settings.profile" } },
       { path: "profile", name: "settings.profile", component: page("settings/profile.vue") },
+      { path: "address", name: "settings.address", component: page("settings/address.vue") },
+      {
+        path: "address/create",
+        name: "settings.address.create",
+        component: page("settings/address-create.vue")
+      },
+
       { path: "password", name: "settings.password", component: page("settings/password.vue") }
     ]
   },
@@ -40,9 +47,19 @@ export default [
     component: page("product/index.vue")
   },
   {
+    path: "/mycarts",
+    name: "cart",
+    component: page("cart/index.vue")
+  },
+  {
     path: "/products/:id",
     name: "product.show",
     component: page("product/show.vue")
+  },
+  {
+    path: "/category/:slug",
+    name: "category.show",
+    component: page("category/show.vue")
   },
 
   { path: "*", component: page("errors/404.vue") }

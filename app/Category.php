@@ -10,4 +10,9 @@ class Category extends Model
     {
         return $this->belongsTo('App\CategoryType',  'category_type_id');
     }
+
+    public function products()
+    {
+        return $this->hasMany('App\Product');
+    }
 }

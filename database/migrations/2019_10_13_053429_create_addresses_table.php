@@ -16,7 +16,10 @@ class CreateAddressesTable extends Migration
         Schema::create('addresses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->text('information');
-            $table->integer('amphoe_id');
+            $table->string('subdistrict');
+            $table->string('district');
+            $table->string('province');
+            $table->string('zipcode');
             $table->string('mobile_number');
 
             //fk
@@ -25,7 +28,7 @@ class CreateAddressesTable extends Migration
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade');
-                
+
             $table->timestamps();
         });
 

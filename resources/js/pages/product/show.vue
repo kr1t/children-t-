@@ -4,13 +4,54 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="#">{{ product.category.name}}</a>
+            <router-link :to="`/category/${product.category.slug}`">{{ product.category.name}}</router-link>
           </li>
           <li class="breadcrumb-item active" aria-current="page">{{ product.name}}</li>
         </ol>
       </nav>
-      <h1>{{ product.name}}</h1>
-      <img :src="product.img_url" />
+
+      <div class="main-product row">
+        <div
+          class="col-md-6"
+          style="border-right:1px solid #ccc; padding-right:10px; box-sizing:border-box;"
+        >
+          <img :src="product.img_url" class="w-100" />
+        </div>
+        <div class="col-md-6">
+          <h1>{{ product.name}}</h1>
+          <hr />
+
+          <div class="price-text">
+            <div v-if="!priceActive">
+              <span class="text-secondary">เริ่มต้น</span>
+              <span class="h2 text-success">{{product.price}} ฿</span>
+            </div>
+            <div v-else>
+              <span class="text-secondary">ราคา</span>
+              <span class="h2 text-success">{{product.prices[priceActive].price}} ฿</span>
+            </div>
+          </div>
+
+          <div class="price-list py-2">
+            <button
+              v-for="(price,index) in product.prices"
+              :key="price.id"
+              class="btn m-1"
+              :class="priceActive == index ? 'btn-success' : 'btn-outline-secondary'"
+              @click="setPrice(index)"
+            >{{ price.description }}</button>
+          </div>
+
+          <div>เหลือ {{ product.amount.amount }} ชิ้น</div>
+          <div class="mt-3">
+            <hr />
+            <form @submit.prevent="addTocart()" @keydown="form.onKeydown($event)">
+              <input type="number" v-model="form.amount" />
+              <v-button :loading="form.busy">เพิ่มสินค้าลงตะกร้า</v-button>
+            </form>
+          </div>
+        </div>
+      </div>
 
       <hr />
       <div class="row">
@@ -24,8 +65,19 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
+import Form from "vform";
 
 export default {
+  data() {
+    return {
+      priceActive: 0,
+      form: new Form({
+        product_amount_id: "",
+        product_price_id: "",
+        amount: 1
+      })
+    };
+  },
   computed: {
     ...mapGetters({
       product: "product/show"
@@ -37,7 +89,17 @@ export default {
   methods: {
     ...mapActions({
       fetch: "product/show"
-    })
+    }),
+    setPrice(index) {
+      this.priceActive = index;
+    },
+    async addTocart() {
+      this.form.product_price_id = this.product.prices[this.priceActive].id;
+
+      this.form.product_amount_id = this.product.amount.id;
+
+      const { data } = await this.form.post("/api/carts");
+    }
   },
   created() {
     this.fetch(this.id);

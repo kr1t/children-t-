@@ -20,5 +20,4 @@ export default {
 };
 </script>
 <style>
-@import "~/css/main.scss";
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div>
     <div class="container">
-      <head-bar title="สินค้าแนะนำประจำวันนี้" to="products" />
+      <h3>{{category.name}}({{category.products.length}})</h3>
+      <hr />
+
       <div class="row">
-        <div class="col-md-3" v-for="(product, index) in products" :key="index">
+        <div class="col-md-3" v-for="(product, index) in category.products" :key="index">
           <product-card :product="product" />
         </div>
       </div>
@@ -12,8 +14,9 @@
 </template>
 
 <script>
-import ProductCard from "./Card";
 import { mapActions, mapGetters } from "vuex";
+import Form from "vform";
+import ProductCard from "~/components/product/Card";
 
 export default {
   components: {
@@ -21,17 +24,19 @@ export default {
   },
   computed: {
     ...mapGetters({
-      products: "product/products",
-      categories: "category/categories"
-    })
+      category: "category/show"
+    }),
+    slug() {
+      return this.$route.params.slug;
+    }
   },
   methods: {
     ...mapActions({
-      fetch: "product/fetch"
+      fetch: "category/show"
     })
   },
   created() {
-    this.fetch();
+    this.fetch(this.slug);
   }
 };
 </script>

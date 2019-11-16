@@ -17,9 +17,13 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::post('logout', 'Auth\LoginController@logout');
     Route::resource('categories', 'CategoryController');
     Route::resource('products', 'ProductController');
+    Route::resource('carts', 'CartController');
+    Route::resource('addresses', 'AddressController');
 
     Route::get('/user', function (Request $request) {
-        return $request->user();
+        $user = $request->user();
+        $user->addresses;
+        return $user;
     });
 
     Route::patch('settings/profile', 'Settings\ProfileController@update');

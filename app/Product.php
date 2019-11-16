@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    protected $appends = ['range', 'img_url'];
+    protected $appends = ['range', 'img_url', 'price', 'amount'];
     public function getRangeAttribute()
     {
         $from = explode('.', $this->from_age);
@@ -23,6 +23,19 @@ class Product extends Model
         return $this->images[0]->file_url;
     }
 
+    public function getPriceAttribute()
+    {
+        return $this->prices[0]->price;
+    }
+    public function getAmountAttribute()
+    {
+        return [
+            "amount" => $this->amounts[0]->amount,
+            "id" => $this->amounts[0]->id
+        ];
+    }
+
+
 
 
     public function prices()
@@ -30,14 +43,19 @@ class Product extends Model
         return $this->hasMany('App\ProductPrice');
     }
 
+    public function amounts()
+    {
+        return $this->hasMany('App\ProductAmount');
+    }
+
     public function images()
     {
         return $this->hasMany('App\ProductImage');
     }
-    public function price()
-    {
-        return $this->hasOne('App\ProductPrice');
-    }
+    // public function price()
+    // {
+    //     return $this->hasOne('App\ProductPrice');
+    // }
 
     public function category()
     {

@@ -125,7 +125,7 @@ class ProductSeeder extends Seeder
                 'brand_id' => 8
             ],
 
-            
+
         ]);
     }
 }

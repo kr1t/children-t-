@@ -10,7 +10,7 @@
       <div class="row mt-2">
         <div class="col-md-2" v-for="(cat, index) in categories" :key="index">
           <card-app :cat="cat" />
-          <button @click="del(cat.id)">del</button>
+          <!-- <button @click="del(cat.id)">del</button> -->
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">{{ appName }}</router-link>
+      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">Childrent</router-link>
 
       <button
         class="navbar-toggler"
@@ -24,6 +24,11 @@
 
         <ul class="navbar-nav ml-auto">
           <!-- Authenticated -->
+          <li class="nav-item">
+            <router-link :to="{name:'cart'}">
+              <img src="/images/cart.png" alt />
+            </router-link>
+          </li>
           <li v-if="user" class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle text-dark"
@@ -38,14 +43,12 @@
             </a>
             <div class="dropdown-menu">
               <router-link :to="{ name: 'settings.profile' }" class="dropdown-item pl-3">
-                <fa icon="cog" fixed-width />
-                {{ $t("settings") }}
+                <fa icon="cog" fixed-width />ตั้งค่า
               </router-link>
 
               <div class="dropdown-divider" />
               <a href="#" class="dropdown-item pl-3" @click.prevent="logout">
-                <fa icon="sign-out-alt" fixed-width />
-                {{ $t("logout") }}
+                <fa icon="sign-out-alt" fixed-width />ออกจากระบบ
               </a>
             </div>
           </li>

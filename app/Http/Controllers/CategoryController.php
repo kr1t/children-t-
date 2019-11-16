@@ -45,9 +45,11 @@ class CategoryController extends Controller
      * @param  \App\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show(Category $category)
+    public function show(Request $request, $slug)
     {
-        return '5555';
+        $category = Category::whereSlug($slug)->first();
+        $category->products;
+        return $category;
     }
 
     /**

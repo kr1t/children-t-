@@ -12,6 +12,10 @@ export const SET_LOCALE = "SET_LOCALE"
 // category.js
 
 export const FETCH_CAT = "FETCH_CAT"
+export const FETCH_CAT_SHOW = "FETCH_CAT_SHOW"
+
+export const FETCH_CART = "FETCH_CART"
+
 export const FETCH_PRODUCT = "FETCH_PRODUCT"
 export const FETCH_PRODUCT_ALL = "FETCH_PRODUCT_ALL"
 export const FETCH_PRODUCT_SHOW = "FETCH_PRODUCT_SHOW"

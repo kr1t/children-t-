@@ -15,13 +15,19 @@ class AddressSeeder extends Seeder
         Address::insert([
             [
                 'information' => '42 xxxx tambol 12',
-                'amphoe_id' => 1,
+                'subdistrict' => 'ดินอุดม',
+                'district' => 'ลำทับ',
+                'province' => 'กระบี่',
+                'zipcode' => '81190',
                 'mobile_number' => '0900000000',
                 'user_id' => 1
             ],
             [
                 'information' => '55 xxxx tambol 12',
-                'amphoe_id' => 1,
+                'subdistrict' => 'ดินอุดม',
+                'district' => 'ลำทับ',
+                'province' => 'กระบี่',
+                'zipcode' => '81190',
                 'mobile_number' => '0800000001',
                 'user_id' => 1
             ]

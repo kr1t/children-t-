@@ -3,23 +3,18 @@ import * as types from "../mutation-types"
 
 // state
 export const state = {
-  categories: null,
-  show: null
+  carts: null
 }
 
 // getters
 export const getters = {
-  categories: state => state.categories,
-  show: state => state.show
+  carts: state => state.carts
 }
 
 // mutations
 export const mutations = {
-  [types.FETCH_CAT](state, { data }) {
-    state.categories = data
-  },
-  [types.FETCH_CAT_SHOW](state, { data }) {
-    state.show = data
+  [types.FETCH_CART](state, { data }) {
+    state.carts = data
   }
 }
 
@@ -27,16 +22,8 @@ export const mutations = {
 export const actions = {
   async fetch({ commit }) {
     try {
-      const { data } = await axios.get("/api/categories")
-      commit(types.FETCH_CAT, { data })
-    } catch (e) {
-      console.log(e)
-    }
-  },
-  async show({ commit }, slug) {
-    try {
-      const { data } = await axios.get(`/api/categories/${slug}`)
-      commit(types.FETCH_CAT_SHOW, { data })
+      const { data } = await axios.get("/api/carts")
+      commit(types.FETCH_CART, { data })
     } catch (e) {
       console.log(e)
     }
