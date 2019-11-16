@@ -16,7 +16,7 @@ export default {
     return {
       menus: [
         { name: "หน้าแรก", to: "/home", class: "pl-0" },
-        { name: "สินค้า", to: "" },
+        { name: "สินค้า", to: "/products" },
         { name: "รีวิว", to: "" },
         { name: "แพ็คเกจ", to: "" },
         { name: "วิธีการเช่า", to: "/howto" },

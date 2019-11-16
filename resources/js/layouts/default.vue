@@ -5,7 +5,6 @@
     <div class="min-h-700">
       <child />
     </div>
-
     <footer-app/>
     
   </div>
@@ -27,7 +26,14 @@ export default {
 };
 </script>
 <style scoped>
+
 .min-h-700{
   min-height: 750px;
+}
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+  body{
+  font-family: 'Kanit', sans-serif !important;
 }
 </style>

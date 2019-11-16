@@ -24,22 +24,22 @@ export default {
       steps: [
         {
           img_url:
-            "https://www.pinclipart.com/picdir/big/121-1215761_konzept-und-gestaltung-facebook-white-icon-png-2018.png",
-          title: "lorem",
+            "/images/step/1.png",
+          title: "เลือกสินค้าที่ต้องการเช่า",
           des:
             " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
         },
         {
           img_url:
-            "https://www.pinclipart.com/picdir/big/121-1215761_konzept-und-gestaltung-facebook-white-icon-png-2018.png",
-          title: "lorem",
+            "/images/step/2.png",
+          title: "เลือกระยะเวลาเช่า",
           des:
             " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
         },
         {
           img_url:
-            "https://www.pinclipart.com/picdir/big/121-1215761_konzept-und-gestaltung-facebook-white-icon-png-2018.png",
-          title: "lorem",
+            "/images/step/3.png",
+          title: "รอรับสินค้าและคืนสินค้า",
           des:
             " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
         }

@@ -1,7 +1,8 @@
 <template>
   <div class="px-5 text-center pt-3">
-    <img :src="step.img_url" class="w-50" />
-    <h5>{{ step.title }}</h5>
+    <img :src="step.img_url" class="w-50 pb-3"/>
+
+    <h5><span>{{ step.title }}</span></h5>
     <p>{{ step.des }}</p>
   </div>
 </template>
@@ -15,5 +16,9 @@ export default {
 <style scoped>
 p {
   font-size: 12px;
+}
+h5 span{
+  padding-bottom: 5px;
+  border-bottom: 4px solid #fff;
 }
 </style>
