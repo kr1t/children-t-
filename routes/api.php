@@ -15,42 +15,40 @@ use App\Role;
 |
 */
 
-Route::get('test/{a}/{b}', function($a, $b){
-    return $a.' : '.$b;
+Route::get('test/{a}/{b}', function ($a, $b) {
+    return $a . ' : ' . $b;
 });
-Route::get('category/{id}', function($id){
+Route::get('category/{id}', function ($id) {
     $cat = Category::find($id);
 
-    foreach($cat->products as $product){
+    foreach ($cat->products as $product) {
         $product->brand;
         $product->product_amounts;
         $product->product_amount;
 
-        $product->xx = 10+12;
-
+        $product->xx = 10 + 12;
     }
-    
+
     return $cat;
 });
 
-Route::get('role', function(){
+Route::get('role', function () {
     $roles = Role::get();
-    foreach($roles as $role){
+    foreach ($roles as $role) {
         $role->users;
-        foreach($role->users as $user ){
+        foreach ($role->users as $user) {
             $user->role;
-            
 
-            foreach($user->addresses as $address){
-                $address->text =  $address->id == $user->default_address_id ? 'เป็นที่อยู่ปัจจุบัน' :'ไม่ใช่ที่อยู่ปัจจุบัน';               
+
+            foreach ($user->addresses as $address) {
+                $address->text =  $address->id == $user->default_address_id ? 'เป็นที่อยู่ปัจจุบัน' : 'ไม่ใช่ที่อยู่ปัจจุบัน';
             }
         }
-
     }
     return $roles;
 });
 
-Route::get('category/2', function(){
+Route::get('category/2', function () {
     $cat = Category::first();
     $cat->category_type;
     return $cat;
@@ -62,6 +60,8 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::resource('categories', 'CategoryController');
     Route::resource('products', 'ProductController');
     Route::resource('carts', 'CartController');
+    Route::resource('packages', 'PackageController');
+
     Route::resource('addresses', 'AddressController');
 
     Route::get('/user', function (Request $request) {
