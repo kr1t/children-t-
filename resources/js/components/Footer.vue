@@ -41,7 +41,7 @@
                 </div>
                 <!-- /.footer-links -->
 
-                <!-- tiny-footer -->
+
             </div>
             
         </div>
@@ -59,7 +59,7 @@ export default {
 <style scoped>
 	.footer { background-color: #f87096; color: #ffffff; font-weight: 400; font-size: 14px; }
 	
-	.footer-widget { padding-bottom: 30px; padding-top: 30px; }
+	.footer-widget { padding-bottom: 30px; padding-top: 50px; }
 	.footer-title { font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #fff; }
 	.footer-widget ul li a { text-transform: capitalize; font-size: 14px; color: #fff; display: block; font-weight: 200; }
 	.footer-widget ul li a:hover { color: #fff; }
