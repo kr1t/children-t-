@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">Childrent</router-link>
+      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand"><img src="/images/logo.png" style="height: 40px;" /></router-link>
 
       <button
         class="navbar-toggler"

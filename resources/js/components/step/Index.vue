@@ -1,8 +1,8 @@
 <template>
   <div class="bg py-5">
     <div class="container text-white text-center">
-      <h5>Lorem ipsum, dolor sit amet</h5>
-      <h6>Tenetur praesentium quas amet dolorem</h6>
+      <h5>Childrent บริการให้เช่าสินค้าแม่และเด็ก</h5>
+      <h6>เช่าสินค้าง่ายๆ เพียง 3 ขั้นตอน</h6>
 
       <div class="row">
         <div class="col-md-4" v-for="(step, index) in steps" :key="index">
@@ -27,21 +27,21 @@ export default {
             "/images/step/1.png",
           title: "เลือกสินค้าที่ต้องการเช่า",
           des:
-            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
+            "พบกับสินค้ามากมายหลายประเภท เช่น เครื่องแต่งกายเด็ก คาร์ซีท รถเข็นเด็ก ของเล่นเด็ก จากแบรนด์ชั้นนำทั่วโลก"
         },
         {
           img_url:
             "/images/step/2.png",
           title: "เลือกระยะเวลาเช่า",
           des:
-            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
+            "เลือกระยะเวลาที่ต้องการเช่าสินค้าตามการใช้งานที่เหมาะสม ยิ่งเช่านาน ยิ่งคุ้มค่าช่วยให้ได้สินค้าที่มีคุณภาพ ประหยัดค่าใช้จ่าย"
         },
         {
           img_url:
             "/images/step/3.png",
           title: "รอรับสินค้าและคืนสินค้า",
           des:
-            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod laborum vitae at nostrum rem tempora non officiis hic repudiandae quas, saepe asperiores, optio, nihil magni! Voluptatibus itaque rerum animi ipsam!"
+            "มีบริการจัดส่งสินค้าและรับคืนสินค้าตามจุดหมายและวันที่ที่ท่านระบุไว้"
         }
       ]
     };

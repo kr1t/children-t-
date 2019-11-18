@@ -4,6 +4,7 @@
 
     <h5><span>{{ step.title }}</span></h5>
     <p>{{ step.des }}</p>
+    
   </div>
 </template>
 
@@ -17,8 +18,11 @@ export default {
 p {
   font-size: 12px;
 }
+h5{
+  padding-bottom: 15px;
+}
 h5 span{
-  padding-bottom: 5px;
-  border-bottom: 4px solid #fff;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #fff;
 }
 </style>
