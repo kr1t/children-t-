@@ -6,6 +6,8 @@
       <child />
     </div>
     <footer-app/>
+    <footer-sub/>
+
     
   </div>
 </template>
@@ -14,6 +16,7 @@
 import Navbar from "~/components/Navbar";
 import NavbarSub from "~/components/NavbarSub";
 import FooterApp from "~/components/Footer";
+import FooterSub from "~/components/FooterSub";
 
 export default {
   name: "MainLayout",
@@ -21,7 +24,8 @@ export default {
   components: {
     Navbar,
     NavbarSub,
-    FooterApp
+    FooterApp,
+    FooterSub
   }
 };
 </script>
