@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Package;
+use App\PackageList;
+
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -34,6 +36,16 @@ class PackageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function addPackageLists(Request $request)
+    {
+        $user = $request->user();
+        PackageList::create([
+            "package_id" => $request->package_id,
+            "user_id" => $user->id
+        ]);
+    }
+
     public function store(Request $request)
     {
         //

@@ -61,6 +61,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::resource('products', 'ProductController');
     Route::resource('carts', 'CartController');
     Route::resource('packages', 'PackageController');
+    Route::post('packages/list/add', 'PackageController@addPackageLists');
 
     Route::resource('addresses', 'AddressController');
 

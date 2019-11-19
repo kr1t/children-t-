@@ -7,17 +7,26 @@
           <package-card :packagex="packagex" />
         </div>
       </div>
+
+      <b-modal id="paymentbox" hide-header hide-footer centered>
+        <p class="my-4">
+          <payment />
+        </p>
+      </b-modal>
     </div>
   </div>
 </template>
 
 <script>
 import PackageCard from "./Card";
+import Payment from "../payment/Index";
+
 import { mapActions, mapGetters } from "vuex";
 
 export default {
   components: {
-    PackageCard
+    PackageCard,
+    Payment
   },
   computed: {
     ...mapGetters({

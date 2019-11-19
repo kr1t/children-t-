@@ -4,7 +4,7 @@
     <h6>Swap ได้ {{packagex.limit}} ครั้ง</h6>
     <p>{{packagex.price}} ฿</p>
 
-    <button class="btn btn-light">ซื้อ</button>
+    <b-button v-b-modal.paymentbox variant="light">ซื้อ</b-button>
   </div>
 </template>
 

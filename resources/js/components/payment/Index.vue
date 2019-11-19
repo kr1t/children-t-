@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="card-body p-5">
+    <div class="card-body">
       <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
@@ -116,7 +116,29 @@
 </template>
 
 <script>
-export default {};
+import Form from "vform";
+import axios from "axios";
+export default {
+  props: {
+    type: {
+      type: String,
+      default: "package"
+    },
+    set_id: {
+      type: Number
+    }
+  },
+  methods: {
+    confirmPayment() {
+      if (type == package) {
+        this.packageAdd();
+      }
+    },
+    async packageAdd() {
+      await axios.post("api/packages/list/add");
+    }
+  }
+};
 </script>
 
 <style>
