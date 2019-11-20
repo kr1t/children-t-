@@ -8,15 +8,22 @@
         </div>
       </div>
 
-      <b-modal id="paymentbox" hide-header hide-footer centered>
+      <b-modal
+        :id="`paymentbox-${item.id}`"
+        hide-header
+        hide-footer
+        centered
+        v-for="(item, index) in packages"
+        :key="index"
+      >
         <p class="my-4">
-          <payment />
+          <payment :set_id="item.id" :item="item" />
         </p>
       </b-modal>
     </div>
   </div>
 </template>
-
+  
 <script>
 import PackageCard from "./Card";
 import Payment from "../payment/Index";

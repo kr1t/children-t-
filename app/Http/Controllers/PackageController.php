@@ -40,9 +40,11 @@ class PackageController extends Controller
     public function addPackageLists(Request $request)
     {
         $user = $request->user();
+        $expiry_date = Package::find($request->package_id)->expiry_date;
         PackageList::create([
             "package_id" => $request->package_id,
-            "user_id" => $user->id
+            "user_id" => $user->id,
+            "expiry_date" => $expiry_date
         ]);
     }
 

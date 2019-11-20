@@ -1,6 +1,11 @@
 <template>
   <article>
     <div class="card-body">
+      <h1>{{item.description}}</h1>
+      <h5>ราคา {{item.price}} ฿</h5>
+      <h5>Swap ได้ {{item.price}} ครั้ง</h5>
+      หมดอายุ {{item.expiry_date_format}}
+      <hr />
       <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
         <li class="nav-item">
           <a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
@@ -72,7 +77,11 @@
               </div>
             </div>
             <!-- row.// -->
-            <button class="subscribe btn btn-primary btn-block" type="button">Confirm</button>
+            <button
+              class="subscribe btn btn-primary btn-block"
+              type="button"
+              @click="confirmPayment()"
+            >Confirm</button>
           </form>
         </div>
         <!-- tab-pane.// -->
@@ -126,16 +135,21 @@ export default {
     },
     set_id: {
       type: Number
+    },
+    item: {
+      type: Object
     }
   },
   methods: {
     confirmPayment() {
-      if (type == package) {
-        this.packageAdd();
-      }
+      // if (type == "package") {
+      this.packageAdd();
+      // }
     },
     async packageAdd() {
-      await axios.post("api/packages/list/add");
+      await axios.post("api/packages/list/add", {
+        package_id: this.set_id
+      });
     }
   }
 };
