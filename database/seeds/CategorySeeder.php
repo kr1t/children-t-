@@ -18,37 +18,12 @@ class CategorySeeder extends Seeder
         Category::insert([
             // 1
             [
-                'name' => 'ของเล่นเสริมพัฒนาการ',
-                'description' => '',
-                'img_url' => 'https://source.unsplash.com/random',
-                'slug' => 'toy'
-            ],
-            // 2
-            [
                 'name' => 'รถเข็นเด็ก',
                 'description' => '',
                 'img_url' => 'https://source.unsplash.com/random',
                 'slug' => 'stroller'
             ],
-            // 3
-            [
-                'name' => 'ตู้แช่นม',
-                'description' => '',
-                'img_url' => 'https://source.unsplash.com/random',
-                'slug' => 'freezer'
-            ],
-            [
-                'name' => 'เครื่องแต่งกาย',
-                'description' => '',
-                'img_url' => 'https://source.unsplash.com/random',
-                'slug' => 'costume'
-            ],
-            [
-                'name' => 'คอกกั้นเด็ก',
-                'description' => '',
-                'img_url' => 'https://source.unsplash.com/random',
-                'slug' => 'child-barrier'
-            ],
+            //2
             [
                 'name' => 'คาร์ซีท',
                 'description' => '',
