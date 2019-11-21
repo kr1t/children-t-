@@ -23,59 +23,102 @@ class BrandSeeder extends Seeder
             ],
              // 2
             [
-                'name' => 'iPlay',
+                'name' => 'Babyzen',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'iplay'
+                'slug' => 'babyzen'
             ],
              // 3
             [
-                'name' => 'Intex',
+                'name' => 'Baby Jogger ',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'intex'
+                'slug' => 'baby-jogger '
             ],
              // 4
             [
-                'name' => 'Lerado',
+                'name' => 'JOIE',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'lerado'
+                'slug' => 'joie'
             ],
              // 5
             [
-                'name' => 'Mother Garden',
+                'name' => 'Chicco',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'mother-garden'
+                'slug' => 'chicco'
             ],
              // 6
             [
-                'name' => 'Thaiken',
+                'name' => 'Doona',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'thaiken'
+                'slug' => 'doona'
             ],
              // 7
             [
-                'name' => 'GONA',
+                'name' => 'Graco',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'gona'
+                'slug' => 'graco'
             ],
              // 8
             [
-                'name' => 'Konig Kids',
+                'name' => 'Combi',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => 'konig-kids'
+                'slug' => 'combi'
             ],
              // 9
             [
-                'name' => '',
+                'name' => 'Aprica',
                 'description' => ' ',
                 'img_url' => ' ',
-                'slug' => ''
+                'slug' => 'aprica'
+            ],
+            // 10
+            [
+                'name' => 'Baby Monster ',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'baby-monster '
+            ],
+            // 11
+            [
+                'name' => 'BabyStyle ',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'babystyle '
+            ],
+
+            // 12
+            [
+                'name' => 'Britax',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'britax'
+            ],
+            // 13
+            [
+                'name' => 'Prince & Princess',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'prince-and-princess'
+            ],
+            // 14
+            [
+                'name' => 'Maxi-Cosi Citi',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'maxi-cosi-citi'
+            ],
+            // 15
+            [
+                'name' => 'Ailebebe',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'ailebebe'
             ],
 
             

@@ -1,6 +1,12 @@
 <template>
   <div class="container">
       Contact
+      Contact
+      Contact
+      Contact
+      Contact
+      Contact
+      Contact
   </div>
 </template>
 
