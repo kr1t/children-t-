@@ -25,7 +25,7 @@
 
           <b-modal id="addPackage" hide-footer hide-header scrollable size="xl">
             <p class="my-4">
-              <MyPackagePage />
+              <MyPackagePage :product_id="product.id"/>
             </p>
           </b-modal>
 

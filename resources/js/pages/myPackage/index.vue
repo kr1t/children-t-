@@ -51,6 +51,9 @@ export default {
     props: {
       type: Boolean,
       default: false
+    },
+    product_id: {
+      type: Number
     }
   },
   computed: {
