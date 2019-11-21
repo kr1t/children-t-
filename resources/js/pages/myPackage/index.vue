@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div :class="!props ? 'container' : ''">
     <div class="card">
       <div class="card-header bg-dark text-light">
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -15,6 +15,7 @@
             <th>วันหมดอายุ</th>
             <th>จำนวนการเช่า</th>
             <th>สถานะ</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +30,10 @@
             <td>{{item.expiry_date}}</td>
             <td>{{item.lists.length}}/{{item.package.limit}}</td>
             <td>{{item.expire ? 'หมดอายุ':'ยังไม่หมดอายุ'}}</td>
+            <td>{{item.expire ? 'หมดอายุ':'ยังไม่หมดอายุ'}}</td>
+            <td v-if="product_id">
+              <button class="btn btn-primary">เพิ่มสินค้าเข้า Package</button>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -42,6 +47,12 @@
 import { mapActions, mapGetters } from "vuex";
 import axios from "axios";
 export default {
+  props: {
+    props: {
+      type: Boolean,
+      default: false
+    }
+  },
   computed: {
     ...mapGetters({
       packages: "package/myPackage"
