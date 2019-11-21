@@ -20,12 +20,28 @@
         <div class="col-md-6">
           <h1>{{ product.name}}</h1>
           <hr />
-          <b-button v-b-modal.addPackage variant="primary">เพิ่มสินค้าเข้าแพ็คเกจ</b-button>หรือ
-          <button class="btn btn-success">ซื้อแพ็คเกจ</button>
+
+          <div class="price-list py-2">
+            <button
+              v-for="(amount,index) in product.amounts"
+              :key="amount.id"
+              class="btn m-1"
+              :class="amountActive == index ? 'btn-success' : 'btn-outline-secondary'"
+              @click="setAmount(index)"
+            >{{ amount.name }}</button>
+          </div>
+
+          <b-button v-b-modal.addPackage variant="primary">เพิ่มสินค้าเข้าแพ็คเกจ</b-button>&nbsp;หรือ
+          <router-link to="/home">
+            <button class="btn btn-success">ซื้อแพ็คเกจ</button>
+          </router-link>
 
           <b-modal id="addPackage" hide-footer hide-header scrollable size="xl">
             <p class="my-4">
-              <MyPackagePage :product_id="product.id"/>
+              <MyPackagePage
+                :product_id="product.id"
+                :product_amount_id="product.amounts[amountActive].id"
+              />
             </p>
           </b-modal>
 
@@ -90,6 +106,8 @@ export default {
   data() {
     return {
       priceActive: 0,
+      amountActive: 0,
+
       form: new Form({
         product_amount_id: "",
         product_price_id: "",
@@ -115,6 +133,9 @@ export default {
     }),
     setPrice(index) {
       this.priceActive = index;
+    },
+    setAmount(index) {
+      this.amountActive = index;
     },
     async addTocart() {
       this.form.product_price_id = this.product.prices[this.priceActive].id;

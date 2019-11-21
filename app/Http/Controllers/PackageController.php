@@ -4,8 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Package;
 use App\PackageList;
+use App\ProductAmount;
+use App\PackageListRentProduct;
+
+
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class PackageController extends Controller
 {
@@ -45,6 +50,19 @@ class PackageController extends Controller
             "package_id" => $request->package_id,
             "user_id" => $user->id,
             "expiry_date" => $expiry_date
+        ]);
+    }
+
+    public function addPackageListRents(Request $request)
+    {
+        $product_id = ProductAmount::find($request->product_amount_id)->product_id;
+        $lists = PackageList::where('id', $request->package_list_id)->get();
+        PackageListRentProduct::create([
+            "package_list_id" => $request->package_list_id,
+            "product_id" =>  $product_id,
+            "product_amount_id" => $request->product_amount_id,
+            "swapped_at" => count($lists) > 0 ? Carbon::now() : null,
+            "amount" => 1
         ]);
     }
 

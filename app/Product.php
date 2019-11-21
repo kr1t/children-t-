@@ -29,6 +29,7 @@ class Product extends Model
     }
     public function getAmountAttribute()
     {
+
         return [
             "amount" => $this->amounts[0]->amount,
             "id" => $this->amounts[0]->id

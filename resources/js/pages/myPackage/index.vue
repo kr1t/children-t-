@@ -30,9 +30,8 @@
             <td>{{item.expiry_date}}</td>
             <td>{{item.lists.length}}/{{item.package.limit}}</td>
             <td>{{item.expire ? 'หมดอายุ':'ยังไม่หมดอายุ'}}</td>
-            <td>{{item.expire ? 'หมดอายุ':'ยังไม่หมดอายุ'}}</td>
             <td v-if="product_id">
-              <button class="btn btn-primary">เพิ่มสินค้าเข้า Package</button>
+              <button class="btn btn-primary" @click="add(item.id)">เพิ่มสินค้าเข้า Package</button>
             </td>
           </tr>
         </tbody>
@@ -54,6 +53,9 @@ export default {
     },
     product_id: {
       type: Number
+    },
+    product_amount_id: {
+      type: Number
     }
   },
   computed: {
@@ -67,6 +69,15 @@ export default {
     }),
     getProduct(item) {
       return item.price.product;
+    },
+
+    async add(id) {
+      await axios.post("/api/packages/list/rent/add", {
+        product_amount_id: this.product_amount_id,
+        package_list_id: id
+      });
+
+      this.$router.push("/mypackage");
     },
     async updateAmount(id, amount) {
       const { data } = await axios.put(`/api/carts/${id}`, { amount });

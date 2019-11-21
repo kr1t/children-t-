@@ -55,6 +55,7 @@ class ProductController extends Controller
         $product->prices;
         $product->category->type;
         $product->prices;
+        $product->amounts;
         return $product;
     }
 

@@ -150,6 +150,8 @@ export default {
       await axios.post("api/packages/list/add", {
         package_id: this.set_id
       });
+
+      this.$router.push("/mypackage");
     }
   }
 };
