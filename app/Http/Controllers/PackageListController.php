@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\PackageList;
+use App\User;
+
 use Illuminate\Http\Request;
 
 class PackageListController extends Controller
@@ -12,9 +14,14 @@ class PackageListController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $user = $request->user();
+        $user->package_lists;
+        foreach ($user->package_lists as $l) {
+            $l->lists;
+        }
+        return  $user->package_lists;
     }
 
     /**

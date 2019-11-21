@@ -52,6 +52,11 @@ export default [
     component: page("cart/index.vue")
   },
   {
+    path: "/mypackage",
+    name: "my.package",
+    component: page("myPackage/index.vue")
+  },
+  {
     path: "/products/:id",
     name: "product.show",
     component: page("product/show.vue")

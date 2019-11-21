@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
-      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand"><img src="/images/logo.png" style="height: 40px;" /></router-link>
+      <router-link :to="{ name: user ? 'home' : 'welcome' }" class="navbar-brand">
+        <img src="/images/logo.png" style="height: 40px;" />
+      </router-link>
 
       <button
         class="navbar-toggler"
@@ -24,7 +26,12 @@
 
         <ul class="navbar-nav ml-auto">
           <!-- Authenticated -->
-          <li class="nav-item">
+          <li class="nav-item" v-if="user">
+            <router-link :to="{name:'my.package'}">
+              <i class="fas fa-book"></i>
+            </router-link>
+          </li>
+          <li class="nav-item" v-if="user">
             <router-link :to="{name:'cart'}">
               <img src="/images/cart.png" alt />
             </router-link>
