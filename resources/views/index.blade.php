@@ -8,7 +8,8 @@
     <script src="https://use.fontawesome.com/c560c025cf.js"></script>
 
     <title>{{ config("app.name") }}</title>
-    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
 
     <link rel="stylesheet" href="{{ mix('dist/css/app.css') }}" />
   </head>

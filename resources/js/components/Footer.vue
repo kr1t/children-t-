@@ -41,6 +41,7 @@
                 </div>
                 <!-- /.footer-links -->
 
+                <!-- tiny-footer -->
 
             </div>
             

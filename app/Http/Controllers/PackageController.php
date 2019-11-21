@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Package;
+use App\PackageList;
+
 use Illuminate\Http\Request;
 
 class PackageController extends Controller
@@ -14,7 +16,8 @@ class PackageController extends Controller
      */
     public function index()
     {
-        //
+        $packages = Package::get();
+        return $packages;
     }
 
     /**
@@ -33,6 +36,18 @@ class PackageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function addPackageLists(Request $request)
+    {
+        $user = $request->user();
+        $expiry_date = Package::find($request->package_id)->expiry_date;
+        PackageList::create([
+            "package_id" => $request->package_id,
+            "user_id" => $user->id,
+            "expiry_date" => $expiry_date
+        ]);
+    }
+
     public function store(Request $request)
     {
         //

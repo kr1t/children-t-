@@ -76,6 +76,11 @@ export default [
     name: "category.show",
     component: page("category/show.vue")
   },
+  {
+    path: "/payment/:payment_by",
+    name: "payment",
+    component: page("payment/Index.vue")
+  },
 
   { path: "*", component: page("errors/404.vue") }
 ]
