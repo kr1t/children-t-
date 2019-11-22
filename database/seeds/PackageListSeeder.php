@@ -19,6 +19,11 @@ class PackageListSeeder extends Seeder
                 'user_id' => 2,
                 'package_id' => 2,
                 'expiry_date' => '2020-03-31 00:00:00'
+            ],
+            [
+                'user_id' => 2,
+                'package_id' => 2,
+                'expiry_date' => '2017-03-31 00:00:00'
             ]
         ]);
 

@@ -3,7 +3,7 @@
     <div class="card-body">
       <h1>{{item.description}}</h1>
       <h5>ราคา {{item.price}} ฿</h5>
-      <h5>Swap ได้ {{item.limit}} ครั้ง/เดือน</h5>
+      <h5>Swap ได้ {{item.limit}} ครั้ง</h5>
       หมดอายุ {{item.expiry_date_format}}
       <hr />
       <ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">

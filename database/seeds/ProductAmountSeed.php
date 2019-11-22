@@ -373,17 +373,17 @@ class ProductAmountSeed extends Seeder
 
             //ตู้แช่นม
             [
-                'name' => '',
+                'name' => '3.5 คิว',
                 'amount' => 20,
                 'product_id' => 27
             ],
             [
-                'name' => '',
+                'name' => '5.3 คิว',
                 'amount' => 20,
                 'product_id' => 28
             ],
             [
-                'name' => '',
+                'name' => '7 คิว',
                 'amount' => 20,
                 'product_id' => 29
             ],

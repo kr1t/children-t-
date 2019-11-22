@@ -19,7 +19,7 @@ class PackageSeeder extends Seeder
                 'price' => 2600,
                 'rent_time' => 0.03,
                 'amount_limit' => 1,
-                'limit' => 1
+                'limit' => 2
             ],
             // 2
             [
@@ -27,7 +27,7 @@ class PackageSeeder extends Seeder
                 'price' => 2600,
                 'rent_time' => 0.06,
                 'amount_limit' => 1,
-                'limit' => 1
+                'limit' => 2
             ]
         ]);
     }
