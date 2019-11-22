@@ -56,11 +56,11 @@
           <div class="showBuy" v-else>
             <div class="price-text">
               <div v-if="!priceActive">
-                <span class="text-secondary">เริ่มต้น</span>
+                <span class="text-secondary">ค่าเช่าเริ่มต้น</span>
                 <span class="h2 text-success">{{product.price}} ฿</span>
               </div>
               <div v-else>
-                <span class="text-secondary">ราคา</span>
+                <span class="text-secondary">ค่าเช่า</span>
                 <span class="h2 text-success">{{product.prices[priceActive].price}} ฿</span>
               </div>
             </div>
