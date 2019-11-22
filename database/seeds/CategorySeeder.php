@@ -23,7 +23,6 @@ class CategorySeeder extends Seeder
                 'img_url' => 'https://source.unsplash.com/random',
                 'slug' => 'stroller'
             ],
-
             // 2
             [
                 'name' => 'ของเล่นเสริมพัฒนาการ',
@@ -31,7 +30,7 @@ class CategorySeeder extends Seeder
                 'img_url' => 'https://source.unsplash.com/random',
                 'slug' => 'toy'
             ],
-            // 2
+            // 3
             [
                 'name' => 'ตู้แช่นม',
                 'description' => '',

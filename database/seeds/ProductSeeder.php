@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/9PGgElkG30M',
                 'category_id' => 1,
-                'brand_id' => 10
+                'brand_id' => 9
             ],//14
             [
                 'name' => 'Baby Monster  Kuki Twin',
@@ -152,7 +152,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/zhkA18vE4zE',
                 'category_id' => 1,
-                'brand_id' => 11
+                'brand_id' => 10
             ],//15
             [
                 'name' => 'BabyStyle Oyster MAX Stroller ',
@@ -162,7 +162,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/OZFNsvHPa2o',
                 'category_id' => 1,
-                'brand_id' => 12
+                'brand_id' => 11
             ],
             
             /*
@@ -342,7 +342,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 16
+                'brand_id' => 12
             ],
             //17
             [
@@ -375,7 +375,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 17
+                'brand_id' => 13
             ],
             //20
             [
@@ -386,7 +386,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 18
+                'brand_id' => 14
             ],
             //21
             [
@@ -397,7 +397,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 19
+                'brand_id' => 15
             ],
             //22
             [
@@ -408,7 +408,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 20
+                'brand_id' => 16
             ],
             //23
             [
@@ -419,7 +419,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 21
+                'brand_id' => 17
             ],
             //24
             [
@@ -452,7 +452,7 @@ class ProductSeeder extends Seeder
                 'deposit' => 0,
                 'youtube_url' => '',
                 'category_id' => 2,
-                'brand_id' => 22
+                'brand_id' => 18
             ],
 
         ]);

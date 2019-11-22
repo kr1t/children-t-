@@ -92,6 +92,8 @@ class BrandSeeder extends Seeder
                 'slug' => 'babystyle '
             ],
 
+            /*
+            //คาร์ซีท
             // 12
             [
                 'name' => 'Britax',
@@ -121,52 +123,53 @@ class BrandSeeder extends Seeder
                 'slug' => 'ailebebe'
             ],
             
+            */
 
-            
+
             //ของเล่น
-            //16
+            //12
             [
                 'name' => 'iPlay',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'iplay'
             ],
-             // 17
+             // 13
             [
                 'name' => 'Intex',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'intex'
             ],
-             // 18
+             // 14
             [
                 'name' => 'Lerado',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'lerado'
             ],
-             // 19
+             // 15
             [
                 'name' => 'Mother Garden',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'mother-garden'
             ],
-             // 20
+             // 26
             [
                 'name' => 'Thaiken',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'thaiken'
             ],
-             // 21
+             // 17
             [
                 'name' => 'GONA',
                 'description' => ' ',
                 'img_url' => ' ',
                 'slug' => 'gona'
             ],
-             // 22
+             // 18
             [
                 'name' => 'Konig Kids',
                 'description' => ' ',
