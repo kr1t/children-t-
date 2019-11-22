@@ -4,7 +4,15 @@
     <package-app />
     <!-- <category /> -->
     <step />
-    <product />
+    <product titlex="สินค้าแนะนำประจำวันนี้" tox="products" />
+
+    <hr />
+    <product titlex="สินค้าประเภทรถเข็นเด็ก" tox="category/stroller" :cat_id="1" />
+    <hr />
+    <product titlex="สินค้าประเภทของเล่นเสริมพัฒนาการ" tox="category/toy" :cat_id="2" />
+    <hr />
+    <product titlex="สินค้าประเภทตู้แช่นม
+" tox="category/freezer" :cat_id="3" />
   </div>
 </template>
 

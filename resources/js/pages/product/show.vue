@@ -93,6 +93,11 @@
           <img :src="image.file_url" class="w-100" />
         </div>
       </div>
+
+      <hr />
+      <div class="row">
+        <product titlex="สินค้าที่ใกล้เคียงกัน" :cat_id="product.category_id" tox="products" />
+      </div>
     </div>
   </div>
 </template>
@@ -101,6 +106,7 @@
 import { mapActions, mapGetters } from "vuex";
 import Form from "vform";
 import MyPackagePage from "../myPackage/index";
+import Product from "~/components/product/Index";
 
 export default {
   data() {
@@ -117,7 +123,8 @@ export default {
     };
   },
   components: {
-    MyPackagePage
+    MyPackagePage,
+    Product
   },
   computed: {
     ...mapGetters({

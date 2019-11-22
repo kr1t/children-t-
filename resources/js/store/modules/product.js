@@ -30,9 +30,9 @@ export const mutations = {
 
 // actions
 export const actions = {
-  async fetch({ commit }) {
+  async fetch({ commit }, cat = "") {
     try {
-      const { data } = await axios.get("/api/products")
+      const { data } = await axios.get("/api/products" + `${cat ? `?cat=${cat}` : ""}`)
 
       commit(types.FETCH_PRODUCT, { data })
     } catch (e) {

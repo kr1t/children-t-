@@ -16,7 +16,11 @@ class ProductController extends Controller
     {
         $products = Product::get();
         if (!$request->all) {
-            $products = Product::get()->take(4);
+            $products = Product::get()->random(4);
+        }
+
+        if ($request->cat) {
+            $products = Product::where('category_id', $request->cat)->get()->take(4);
         }
         foreach ($products as $product) {
             $product->price;

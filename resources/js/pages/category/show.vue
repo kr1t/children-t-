@@ -5,7 +5,7 @@
       <hr />
 
       <div class="row">
-        <div class="col-md-3" v-for="(product, index) in category.products" :key="index">
+        <div class="col-md-3 mb-4" v-for="(product, index) in category.products" :key="index">
           <product-card :product="product" />
         </div>
       </div>

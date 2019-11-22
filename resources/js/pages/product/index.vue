@@ -16,6 +16,12 @@ import ProductCard from "~/components/product/Card";
 import { mapActions, mapGetters } from "vuex";
 
 export default {
+  props: {
+    cat: {
+      type: String,
+      default: ""
+    }
+  },
   components: {
     ProductCard
   },
