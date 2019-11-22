@@ -15,19 +15,19 @@ class PackageSeeder extends Seeder
         Package::insert([
             // 1
             [
-                'description' => '3 เดือน',
-                'price' => 1500,
+                'description' => 'รถเข็นเด็ก 1 เดือน',
+                'price' => 2600,
                 'rent_time' => 0.03,
                 'amount_limit' => 1,
-                'limit' => 3
+                'limit' => 1
             ],
             // 2
             [
-                'description' => '6 เดือน',
-                'price' => 4000,
+                'description' => 'คาร์ซีท 1 เดือน',
+                'price' => 2600,
                 'rent_time' => 0.06,
                 'amount_limit' => 1,
-                'limit' => 6
+                'limit' => 1
             ]
         ]);
     }
