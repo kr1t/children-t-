@@ -19,26 +19,26 @@ class ProductPriceSeeder extends Seeder
                 //  range : เดือน.วัน   12.00 = 1 ปี
                 [
                     'description' => '7 วัน',
-                    'price' => 500,
+                    'price' => 900,
                     'product_id' => $i + 1,
                     'range' => 00.07
 
                 ],
                 [
                     'description' => '15 วัน',
-                    'price' => 1000,
+                    'price' => 1400,
                     'product_id' => $i + 1,
                     'range' => 00.15
                 ],
                 [
                     'description' => '30 วัน',
-                    'price' => 1500,
+                    'price' => 1900,
                     'product_id' => $i + 1,
                     'range' => 01.00
                 ],
                 [
                     'description' => '90 วัน',
-                    'price' => 2000,
+                    'price' => 2400,
                     'product_id' => $i + 1,
                     'range' => 03.00
                 ]
@@ -51,7 +51,7 @@ class ProductPriceSeeder extends Seeder
                 //  range : เดือน.วัน   12.00 = 1 ปี
                 [
                     'description' => '30 วัน',
-                    'price' => 1500,
+                    'price' => 1900,
                     'product_id' => $i + 1,
                     'range' => 00.30
                 ]
@@ -64,57 +64,57 @@ class ProductPriceSeeder extends Seeder
             //  range : เดือน.วัน   12.00 = 1 ปี
             [
                 'description' => '6 เดือน',
-                'price' => 2500,
+                'price' => 2900,
                 'product_id' => 27,
                 'range' => 06.00
             ],
             [
                 'description' => '9 เดือน',
-                'price' => 3500,
+                'price' => 3900,
                 'product_id' => 27,
                 'range' => 09.00
             ],
             [
                 'description' => '12 เดือน',
-                'price' => 4000,
+                'price' => 4400,
                 'product_id' => 27,
                 'range' => 12.00
             ],
             //28
             [
                 'description' => '6 เดือน',
-                'price' => 3500,
+                'price' => 3900,
                 'product_id' => 28,
                 'range' => 06.00
             ],
             [
                 'description' => '9 เดือน',
-                'price' => 4500,
+                'price' => 4900,
                 'product_id' => 28,
                 'range' => 09.00
             ],
             [
                 'description' => '12 เดือน',
-                'price' => 5000,
+                'price' => 5400,
                 'product_id' => 28,
                 'range' => 12.00
             ],
             //29
             [
                 'description' => '6 เดือน',
-                'price' => 4500,
+                'price' => 4900,
                 'product_id' => 29,
                 'range' => 06.00
             ],
             [
                 'description' => '9 เดือน',
-                'price' => 5500,
+                'price' => 5900,
                 'product_id' => 29,
                 'range' => 09.00
             ],
             [
                 'description' => '12 เดือน',
-                'price' => 6000,
+                'price' => 6400,
                 'product_id' => 29,
                 'range' => 12.00
             ],
