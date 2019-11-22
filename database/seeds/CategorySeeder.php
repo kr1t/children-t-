@@ -23,21 +23,15 @@ class CategorySeeder extends Seeder
                 'img_url' => 'https://source.unsplash.com/random',
                 'slug' => 'stroller'
             ],
-            //2
-            [
-                'name' => 'คาร์ซีท',
-                'description' => '',
-                'img_url' => 'https://source.unsplash.com/random',
-                'slug' => 'car-seat'
-            ],
-            //3
+
+            // 2
             [
                 'name' => 'ของเล่นเสริมพัฒนาการ',
                 'description' => '',
                 'img_url' => 'https://source.unsplash.com/random',
                 'slug' => 'toy'
             ],
-            // 4
+            // 2
             [
                 'name' => 'ตู้แช่นม',
                 'description' => '',

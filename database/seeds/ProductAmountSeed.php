@@ -316,58 +316,58 @@ class ProductAmountSeed extends Seeder
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 32
+                'product_id' => 16
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 33
+                'product_id' => 17
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 34
+                'product_id' => 18
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 35
+                'product_id' => 19
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 36
+                'product_id' => 20
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 37
+                'product_id' => 21
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 38
+                'product_id' => 22
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 39
+                'product_id' => 23
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 40
+                'product_id' => 24
             ],
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 41
+                'product_id' => 25
             ]
             ,
             [
                 'name' => '',
                 'amount' => 20,
-                'product_id' => 42
+                'product_id' => 26
             ]
 
 

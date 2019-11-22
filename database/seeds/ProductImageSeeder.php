@@ -347,83 +347,83 @@ class ProductImageSeeder extends Seeder
             //ของเล่น
             [
                 'file_url' => '/images/toys/1-0.png',
-                'product_id' => 32
+                'product_id' => 16
             ],
             [
                 'file_url' => '/images/toys/1-1.png',
-                'product_id' => 32
+                'product_id' => 16
             ],
             [
                 'file_url' => '/images/toys/1-2.png',
-                'product_id' => 32
+                'product_id' => 16
             ],
             [
                 'file_url' => '/images/toys/2-0.jpg',
-                'product_id' => 33
+                'product_id' => 17
             ],
             [
                 'file_url' => '/images/toys/2-1.jpg',
-                'product_id' => 33
+                'product_id' => 17
             ],
             [
                 'file_url' => '/images/toys/3.jpg',
-                'product_id' => 34
+                'product_id' => 18
             ],
             [
                 'file_url' => '/images/toys/4-0.jpg',
-                'product_id' => 35
+                'product_id' => 19
             ],
             [
                 'file_url' => '/images/toys/4-1.png',
-                'product_id' => 35
+                'product_id' => 19
             ],
             [
                 'file_url' => '/images/toys/5.png',
-                'product_id' => 36
+                'product_id' => 20
             ],
             [
                 'file_url' => '/images/toys/5-1.png',
-                'product_id' => 36
+                'product_id' => 20
             ],
             [
                 'file_url' => '/images/toys/6.png',
-                'product_id' => 37
+                'product_id' => 21
             ],
             [
                 'file_url' => '/images/toys/6-1.png',
-                'product_id' => 37
+                'product_id' => 21
             ],
             [
                 'file_url' => '/images/toys/7-0.png',
-                'product_id' => 38
+                'product_id' => 22
             ],
             [
                 'file_url' => '/images/toys/7-1.png',
-                'product_id' => 38
+                'product_id' => 22
             ],
             [
                 'file_url' => '/images/toys/8.jpg',
-                'product_id' => 39
+                'product_id' => 23
             ],
             [
                 'file_url' => '/images/toys/9.jpg',
-                'product_id' => 40
+                'product_id' => 24
             ],
             [
                 'file_url' => '/images/toys/10.png',
-                'product_id' => 41
+                'product_id' => 25
             ],
             [
                 'file_url' => '/images/toys/10-1.png',
-                'product_id' => 41
+                'product_id' => 25
             ],
             [
                 'file_url' => '/images/toys/11-1.jpg',
-                'product_id' => 42
+                'product_id' => 26
             ],
             [
                 'file_url' => '/images/toys/11-2.png',
-                'product_id' => 42
+                'product_id' => 26
             ],
         ]);
     }

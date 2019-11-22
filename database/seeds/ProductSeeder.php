@@ -333,7 +333,7 @@ class ProductSeeder extends Seeder
 
 
             //ของเล่น
-            //32
+            //16
             [
                 'name' => 'บ้านบอล',
                 'description' => 'ขนาดรวม 90 x 150 x 110 cm. ใช้ได้ทั้งในร่มและกลางแจ้ง พิมพ์หมึกพิมพ์ไม่เป็นอันตรายต่อเด็ก',
@@ -341,10 +341,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 04.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 16
             ],
-            //33
+            //17
             [
                 'name' => 'เต๊นท์บ้านบอลอุโมงค์',
                 'description' => 'เล่นได้2-3คน ตัวเต็นท์จะเป็นโครงเหล็ก เหมือนที่บังแดดรถยนต์ กางปุ๊ปจะเด็งออกมาทันที',
@@ -352,10 +352,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 04.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 1
             ],
-            //34
+            //18
             [
                 'name' => 'อุโมงค์หนอนหลากสี',
                 'description' => 'อุโมงค์รูปหนอน ผลิตจากพลาสติกโพลีเอธิลีน ชนิด Food grade ปลอดภัยสำหรับเด็ก สีสันสดใส คงทน แข็งแรง ไม่มีพื้นด้านใน ',
@@ -363,10 +363,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 1
             ],
-            //35
+            //19
             [
                 'name' => 'สระน้ําเป่าลม สไลเดอร์ สายรุ้ง',
                 'description' => 'รับน้ำหนักสูงสุดได้ 81 kg. เล่นได้ไม่เกิน3คน ',
@@ -374,10 +374,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 17
             ],
-            //36
+            //20
             [
                 'name' => 'บ้านน้อยแสนรัก',
                 'description' => 'ผลิตจากพลาสติก LLDPE ชนิด Food Grade พลาสติกมีความแข็งแรง ทนทาน รองรับแรงกระแทกได้ดี สามารถใช้งานได้ทั้งกลางแจ้งและในร่ม',
@@ -385,10 +385,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 18
             ],
-            //37
+            //21
             [
                 'name' => 'ชุดครัว',
                 'description' => 'ผนังชุดครัวด้านซ้าย มีที่วางโถกาแฟ โกโก้ กน้ำตาล ส่วนด้านขวามีช่วงใส่ขวดเครื่องปรุงต่าง ๆ ตรงกลางแขนอุปกรณ์ทำครัว ทำเป็นรูปดอกไม้',
@@ -396,10 +396,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 19
             ],
-            //38
+            //22
             [
                 'name' => 'ชุดเครื่องมือช่าง',
                 'description' => 'ชุดเครื่องมือช่างของเล่นเด็กช่วยเสริมพัฒนาการ ที่ออกแบบมาให้หนูน้อยสนุกไปกับการเล่นและยังช่วยเสริมสร้างทักษะให้ตัวหนูน้อย ชุดอุปกรณ์เครื่องช่างได้แก่ เลื่อย ค้อน คีม ไขควง น็อต เป็นต้น ',
@@ -407,10 +407,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 20
             ],
-            //39
+            //23
             [
                 'name' => 'สไลด์เดอร์เด็ก ลายหมีน้อย',
                 'description' => 'ชุดชิงช้า สไลเดอร์ และแป้นบาส เบาะรองคลาน รุ่น Teddy Bear Slide with Swing SET ยี่ห้อ GONA นำเข้าจาก Korea ของแท้ ผ่านศูนย์จำหน่ายในประเทศไทย.. ของแท้ดีกว่า เพราะมีความทนทาน ซึ่งสินค้าสไลเดอร์ มีคุณภาพจากเกาหลี โรงงานได้รับมาตรฐานการผลิต ระดับโลก ด้วยมาตรฐาน ASTM ,EN71 ,SASO พร้อมได้รับมาตราฐาน มอก. จากประเทศไทย จึงมั่นใจได้ถึงคุณภาพสินค้า ความปลอดภัย ไร้สารพิษ ออกแบบรูปทรงโค้งมน ไม่มีเหลี่ยมคม ไม่บาดมือเด็ก น่าใช้ สีสันสดใส',
@@ -418,10 +418,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 21
             ],
-            //40
+            //24
             [
                 'name' => 'ชิงช้าเด็กเล่น',
                 'description' => 'ติดตั้งได้ทั้งภายในและภายนอก - วัสดุทำจากพลาสติกคุณภาพดี - รับน้ำหนักได้ประมาณ 30 kg',
@@ -429,10 +429,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 1
             ],
-            //41
+            //25
             [
                 'name' => 'กระโจมเด็ก อินเดียแดง',
                 'description' => 'เต็นท์กระโจมอินเดียนแดง เสริมสร้างจินตนาการความคิดสร้างสรรค์ สามารถเล่นได้ทั้งในบ้านและนอกบ้าน น้ำหนักสินค้า 1.2 kg. หน้าต่างผ้าโปรงระบายอากาศ',
@@ -440,10 +440,10 @@ class ProductSeeder extends Seeder
                 'to_age' => 00.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 1
             ],
-            //42
+            //26
             [
                 'name' => 'เก้าอี้หมุน 360องศา',
                 'description' => 'สินค้ามีหลากหลายสีเพื่อเป็นการฝึกการมองเห็นสีต่างๆ เบาะนั่งหมุนได้ 360องศา ให้ลูกน้อยฝึกการทรงตัวและหมุนของลูกน้อย ',
@@ -451,7 +451,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 01.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 3,
+                'category_id' => 2,
                 'brand_id' => 22
             ],
 
