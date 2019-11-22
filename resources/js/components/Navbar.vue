@@ -28,7 +28,7 @@
           <!-- Authenticated -->
           <li class="nav-item" v-if="user">
             <router-link :to="{name:'my.package'}">
-              <i class="fas fa-book"></i>
+              <i class="fas fa-book pt-3 pr-2"></i>
             </router-link>
           </li>
           <li class="nav-item" v-if="user">

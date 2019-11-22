@@ -47,7 +47,7 @@ class PackageListRentProductController extends Controller
      */
     public function show(PackageListRentProduct $packageListRentProduct)
     {
-        //
+        return $packageListRentProduct;
     }
 
     /**

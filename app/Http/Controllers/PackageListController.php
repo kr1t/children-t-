@@ -20,6 +20,10 @@ class PackageListController extends Controller
         $user->package_lists;
         foreach ($user->package_lists as $l) {
             $l->lists;
+
+            foreach ($l->lists as $x) {
+                $x->amount_data->product;
+            }
         }
         return  $user->package_lists;
     }
@@ -53,7 +57,7 @@ class PackageListController extends Controller
      */
     public function show(PackageList $packageList)
     {
-        //
+        return $packageList;
     }
 
     /**
