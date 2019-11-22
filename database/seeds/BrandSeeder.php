@@ -178,6 +178,15 @@ class BrandSeeder extends Seeder
             ],
 
 
+            //ตู้แช่นม
+            //19
+            [
+                'name' => 'Sanden Intercool',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'sanden-intercool'
+            ],
+
             
             
         ]);

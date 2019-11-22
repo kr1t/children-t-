@@ -425,6 +425,44 @@ class ProductImageSeeder extends Seeder
                 'file_url' => '/images/toys/11-2.png',
                 'product_id' => 26
             ],
+
+            //ตู้แช่นม
+            [
+                'file_url' => '/images/freezer/3-5Q-1.jpg',
+                'product_id' => 27
+            ],
+            [
+                'file_url' => '/images/freezer/3-5Q-2.jpg',
+                'product_id' => 27
+            ],
+            [
+                'file_url' => '/images/freezer/3-5Q-3.jpg',
+                'product_id' => 27
+            ],
+            [
+                'file_url' => '/images/freezer/5-3Q-1.jpg',
+                'product_id' => 28
+            ],
+            [
+                'file_url' => '/images/freezer/5-3Q-2.jpg',
+                'product_id' => 28
+            ],
+            [
+                'file_url' => '/images/freezer/5-3Q-3.jpg',
+                'product_id' => 28
+            ],
+            [
+                'file_url' => '/images/freezer/7Q-1.jpg',
+                'product_id' => 29
+            ],
+            [
+                'file_url' => '/images/freezer/7Q-2.jpg',
+                'product_id' => 29
+            ],
+            [
+                'file_url' => '/images/freezer/7Q-3.jpg',
+                'product_id' => 29
+            ],
         ]);
     }
 }

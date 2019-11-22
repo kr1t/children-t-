@@ -12,7 +12,7 @@ class ProductPriceSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 31; $i++) {
+        for ($i = 0; $i < 29; $i++) {
             ProductPrice::insert([
                 //  range : เดือน.วัน   12.00 = 1 ปี
                 [

@@ -455,6 +455,42 @@ class ProductSeeder extends Seeder
                 'brand_id' => 18
             ],
 
+
+            //ตู้แช่นม
+            //27
+            [
+                'name' => 'ตู้แช่นม Sanden intercool 3.5 คิว',
+                'description' => ' ',
+                'from_age' => 00.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 19
+            ],
+            //28
+            [
+                'name' => 'ตู้แช่นม Sanden intercool 5.3 คิว',
+                'description' => ' ',
+                'from_age' => 00.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 19
+            ],
+            //29
+            [
+                'name' => 'ตู้แช่นม Sanden intercool 7 คิว',
+                'description' => '',
+                'from_age' => 00.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 19
+            ],
+
         ]);
     }
 }
