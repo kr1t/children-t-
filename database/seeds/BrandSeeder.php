@@ -120,6 +120,60 @@ class BrandSeeder extends Seeder
                 'img_url' => ' ',
                 'slug' => 'ailebebe'
             ],
+            
+
+            
+            //ของเล่น
+            //16
+            [
+                'name' => 'iPlay',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'iplay'
+            ],
+             // 17
+            [
+                'name' => 'Intex',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'intex'
+            ],
+             // 18
+            [
+                'name' => 'Lerado',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'lerado'
+            ],
+             // 19
+            [
+                'name' => 'Mother Garden',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'mother-garden'
+            ],
+             // 20
+            [
+                'name' => 'Thaiken',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'thaiken'
+            ],
+             // 21
+            [
+                'name' => 'GONA',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'gona'
+            ],
+             // 22
+            [
+                'name' => 'Konig Kids',
+                'description' => ' ',
+                'img_url' => ' ',
+                'slug' => 'konig-kids'
+            ],
+
 
             
             

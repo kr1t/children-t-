@@ -165,6 +165,7 @@ class ProductSeeder extends Seeder
                 'brand_id' => 12
             ],
             
+            /*
             //car seat
             //16
             [
@@ -174,7 +175,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 01.03,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/ef4GxFxFGN4',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 12
             ],//17
             [
@@ -184,7 +185,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 07.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/Ggq92iVQ-jg',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 13
             ],//18
             [
@@ -194,7 +195,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 01.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/6kujgkpBkE0',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 14
             ],//19
             [
@@ -204,7 +205,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 10.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/K4XnE0_dbo8',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 7
             ],//20
             [
@@ -214,7 +215,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 01.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/2wM7sMRN30M',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 7
             ],//21
             [
@@ -224,7 +225,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 06.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/fJ2SSUd5nxY',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 15
             ],//22
             [
@@ -234,7 +235,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 12.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/IMjf_P5Z81E',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 9
             ],//23
             [
@@ -244,7 +245,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 11.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/dHPoogYEfjo',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 15
             ],//24
             [
@@ -254,7 +255,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 07.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/EEyR_n4vuwg',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 15
             ],//25
             [
@@ -264,7 +265,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 12.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/IMjf_P5Z81E',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 9
             ],//26
             [
@@ -274,7 +275,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 11.00,
                 'deposit' => 0,
                 'youtube_url' => '',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 15
             ],//27
             [
@@ -284,7 +285,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 07.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/9ASF1aWHQRQ',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 15
             ],//28
             [
@@ -294,7 +295,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 12.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/hRtlCCxiMIQ',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 5
             ],//29
             [
@@ -304,7 +305,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 12.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/5UKJELQmuv8',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 9
             ],//30
             [
@@ -314,7 +315,7 @@ class ProductSeeder extends Seeder
                 'to_age' => 10.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/SHCe3SirUL0',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 7
             ],//31
             [
@@ -324,9 +325,135 @@ class ProductSeeder extends Seeder
                 'to_age' => 12.00,
                 'deposit' => 0,
                 'youtube_url' => 'https://youtu.be/4-jnQ8_pSdA',
-                'category_id' => 1,
+                'category_id' => 2,
                 'brand_id' => 4
-            ]
+            ],
+
+            */
+
+
+            //ของเล่น
+            //32
+            [
+                'name' => 'บ้านบอล',
+                'description' => 'ขนาดรวม 90 x 150 x 110 cm. ใช้ได้ทั้งในร่มและกลางแจ้ง พิมพ์หมึกพิมพ์ไม่เป็นอันตรายต่อเด็ก',
+                'from_age' => 00.03,
+                'to_age' => 04.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 16
+            ],
+            //33
+            [
+                'name' => 'เต๊นท์บ้านบอลอุโมงค์',
+                'description' => 'เล่นได้2-3คน ตัวเต็นท์จะเป็นโครงเหล็ก เหมือนที่บังแดดรถยนต์ กางปุ๊ปจะเด็งออกมาทันที',
+                'from_age' => 00.03,
+                'to_age' => 04.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 1
+            ],
+            //34
+            [
+                'name' => 'อุโมงค์หนอนหลากสี',
+                'description' => 'อุโมงค์รูปหนอน ผลิตจากพลาสติกโพลีเอธิลีน ชนิด Food grade ปลอดภัยสำหรับเด็ก สีสันสดใส คงทน แข็งแรง ไม่มีพื้นด้านใน ',
+                'from_age' => 03.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 1
+            ],
+            //35
+            [
+                'name' => 'สระน้ําเป่าลม สไลเดอร์ สายรุ้ง',
+                'description' => 'รับน้ำหนักสูงสุดได้ 81 kg. เล่นได้ไม่เกิน3คน ',
+                'from_age' => 03.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 17
+            ],
+            //36
+            [
+                'name' => 'บ้านน้อยแสนรัก',
+                'description' => 'ผลิตจากพลาสติก LLDPE ชนิด Food Grade พลาสติกมีความแข็งแรง ทนทาน รองรับแรงกระแทกได้ดี สามารถใช้งานได้ทั้งกลางแจ้งและในร่ม',
+                'from_age' => 02.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 18
+            ],
+            //37
+            [
+                'name' => 'ชุดครัว',
+                'description' => 'ผนังชุดครัวด้านซ้าย มีที่วางโถกาแฟ โกโก้ กน้ำตาล ส่วนด้านขวามีช่วงใส่ขวดเครื่องปรุงต่าง ๆ ตรงกลางแขนอุปกรณ์ทำครัว ทำเป็นรูปดอกไม้',
+                'from_age' => 02.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 19
+            ],
+            //38
+            [
+                'name' => 'ชุดเครื่องมือช่าง',
+                'description' => 'ชุดเครื่องมือช่างของเล่นเด็กช่วยเสริมพัฒนาการ ที่ออกแบบมาให้หนูน้อยสนุกไปกับการเล่นและยังช่วยเสริมสร้างทักษะให้ตัวหนูน้อย ชุดอุปกรณ์เครื่องช่างได้แก่ เลื่อย ค้อน คีม ไขควง น็อต เป็นต้น ',
+                'from_age' => 03.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 20
+            ],
+            //39
+            [
+                'name' => 'สไลด์เดอร์เด็ก ลายหมีน้อย',
+                'description' => 'ชุดชิงช้า สไลเดอร์ และแป้นบาส เบาะรองคลาน รุ่น Teddy Bear Slide with Swing SET ยี่ห้อ GONA นำเข้าจาก Korea ของแท้ ผ่านศูนย์จำหน่ายในประเทศไทย.. ของแท้ดีกว่า เพราะมีความทนทาน ซึ่งสินค้าสไลเดอร์ มีคุณภาพจากเกาหลี โรงงานได้รับมาตรฐานการผลิต ระดับโลก ด้วยมาตรฐาน ASTM ,EN71 ,SASO พร้อมได้รับมาตราฐาน มอก. จากประเทศไทย จึงมั่นใจได้ถึงคุณภาพสินค้า ความปลอดภัย ไร้สารพิษ ออกแบบรูปทรงโค้งมน ไม่มีเหลี่ยมคม ไม่บาดมือเด็ก น่าใช้ สีสันสดใส',
+                'from_age' => 02.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 21
+            ],
+            //40
+            [
+                'name' => 'ชิงช้าเด็กเล่น',
+                'description' => 'ติดตั้งได้ทั้งภายในและภายนอก - วัสดุทำจากพลาสติกคุณภาพดี - รับน้ำหนักได้ประมาณ 30 kg',
+                'from_age' => 02.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 1
+            ],
+            //41
+            [
+                'name' => 'กระโจมเด็ก อินเดียแดง',
+                'description' => 'เต็นท์กระโจมอินเดียนแดง เสริมสร้างจินตนาการความคิดสร้างสรรค์ สามารถเล่นได้ทั้งในบ้านและนอกบ้าน น้ำหนักสินค้า 1.2 kg. หน้าต่างผ้าโปรงระบายอากาศ',
+                'from_age' => 02.00,
+                'to_age' => 00.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 1
+            ],
+            //42
+            [
+                'name' => 'เก้าอี้หมุน 360องศา',
+                'description' => 'สินค้ามีหลากหลายสีเพื่อเป็นการฝึกการมองเห็นสีต่างๆ เบาะนั่งหมุนได้ 360องศา ให้ลูกน้อยฝึกการทรงตัวและหมุนของลูกน้อย ',
+                'from_age' => 00.03,
+                'to_age' => 01.00,
+                'deposit' => 0,
+                'youtube_url' => '',
+                'category_id' => 3,
+                'brand_id' => 22
+            ],
 
         ]);
     }

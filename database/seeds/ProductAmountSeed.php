@@ -178,6 +178,8 @@ class ProductAmountSeed extends Seeder
                 'amount' => 20,
                 'product_id' => 15
             ],
+
+            /*
             [
                 'name' => 'สีดำ',
                 'amount' => 20,
@@ -307,7 +309,68 @@ class ProductAmountSeed extends Seeder
                 'name' => 'สีเทา',
                 'amount' => 20,
                 'product_id' => 31
+            ],
+            */
+
+            //ของเล่น
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 32
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 33
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 34
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 35
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 36
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 37
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 38
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 39
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 40
+            ],
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 41
             ]
+            ,
+            [
+                'name' => '',
+                'amount' => 20,
+                'product_id' => 42
+            ]
+
+
         ]);
     }
 }

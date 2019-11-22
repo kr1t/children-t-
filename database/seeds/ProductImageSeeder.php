@@ -189,6 +189,9 @@ class ProductImageSeeder extends Seeder
                 'file_url' => '/images/stroller/oysterMax3.jpg',
                 'product_id' => 15
             ],
+
+            /*
+            //คาร์ซีท
             [
                 'file_url' => '/images/carseat/B-save35ดำ.jpg',
                 'product_id' => 16
@@ -336,8 +339,92 @@ class ProductImageSeeder extends Seeder
             [
                 'file_url' => '/images/carseat/csjoie3.jpg',
                 'product_id' => 31
-            ]
+            ],
 
+            */
+
+
+            //ของเล่น
+            [
+                'file_url' => '/images/toys/1-0.png',
+                'product_id' => 32
+            ],
+            [
+                'file_url' => '/images/toys/1-1.png',
+                'product_id' => 32
+            ],
+            [
+                'file_url' => '/images/toys/1-2.png',
+                'product_id' => 32
+            ],
+            [
+                'file_url' => '/images/toys/2-0.jpg',
+                'product_id' => 33
+            ],
+            [
+                'file_url' => '/images/toys/2-1.jpg',
+                'product_id' => 33
+            ],
+            [
+                'file_url' => '/images/toys/3.jpg',
+                'product_id' => 34
+            ],
+            [
+                'file_url' => '/images/toys/4-0.jpg',
+                'product_id' => 35
+            ],
+            [
+                'file_url' => '/images/toys/4-1.png',
+                'product_id' => 35
+            ],
+            [
+                'file_url' => '/images/toys/5.png',
+                'product_id' => 36
+            ],
+            [
+                'file_url' => '/images/toys/5-1.png',
+                'product_id' => 36
+            ],
+            [
+                'file_url' => '/images/toys/6.png',
+                'product_id' => 37
+            ],
+            [
+                'file_url' => '/images/toys/6-1.png',
+                'product_id' => 37
+            ],
+            [
+                'file_url' => '/images/toys/7-0.png',
+                'product_id' => 38
+            ],
+            [
+                'file_url' => '/images/toys/7-1.png',
+                'product_id' => 38
+            ],
+            [
+                'file_url' => '/images/toys/8.jpg',
+                'product_id' => 39
+            ],
+            [
+                'file_url' => '/images/toys/9.jpg',
+                'product_id' => 40
+            ],
+            [
+                'file_url' => '/images/toys/10.png',
+                'product_id' => 41
+            ],
+            [
+                'file_url' => '/images/toys/10-1.png',
+                'product_id' => 41
+            ],
+            [
+                'file_url' => '/images/toys/11-1.jpg',
+                'product_id' => 42
+            ],
+            [
+                'file_url' => '/images/toys/11-2.png',
+                'product_id' => 42
+            ],
         ]);
     }
 }
