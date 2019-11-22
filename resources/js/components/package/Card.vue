@@ -6,7 +6,7 @@
     <h6>ค่ามัดจำ 500 ฿</h6>
     <p>ราคา {{packagex.price}} ฿</p>
 
-    <b-button v-b-modal="`paymentbox-${packagex.id}`" variant="light">ซื้อ</b-button>
+    <b-button v-b-modal="`paymentbox-${packagex.id}`" variant="light">สมัครสมาชิก</b-button></b-button>
   </div>
 </template>
 
