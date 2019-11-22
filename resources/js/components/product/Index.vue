@@ -3,8 +3,7 @@
     <div class="container">
       <head-bar title="สินค้าแนะนำประจำวันนี้" to="products" />
       <div class="row pb-4">
-        <div class="col-md-3" v-for="(product, index) in products" :key="index">
-          
+        <div class="col-md-3 mb-4" v-for="(product, index) in products" :key="index">
           <product-card :product="product" />
         </div>
       </div>

@@ -3,7 +3,7 @@
     <div class="container">
       <h1>สินค้าทั้งหมด</h1>
       <div class="row">
-        <div class="col-md-3" v-for="(product, index) in products" :key="index">
+        <div class="col-md-3 mb-4" v-for="(product, index) in products" :key="index">
           <product-card :product="product" />
         </div>
       </div>

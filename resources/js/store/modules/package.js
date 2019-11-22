@@ -5,14 +5,16 @@ import * as types from "../mutation-types"
 export const state = {
   packages: null,
   show: null,
-  myPackage: null
+  myPackage: null,
+  myPackageShow: null
 }
 
 // getters
 export const getters = {
   packages: state => state.packages,
   show: state => state.show,
-  myPackage: state => state.myPackage
+  myPackage: state => state.myPackage,
+  myPackageShow: state => state.myPackageShow
 }
 
 // mutations
@@ -25,6 +27,9 @@ export const mutations = {
   },
   [types.FETCH_MYPACKAGE](state, { data }) {
     state.myPackage = data
+  },
+  [types.FETCH_MYPACKAGESHOW](state, { data }) {
+    state.myPackageShow = data
   }
 }
 
@@ -49,7 +54,15 @@ export const actions = {
   async show({ commit }, id) {
     try {
       const { data } = await axios.get(`/api/packages/${id}`)
-      commit(types.FETCH_CAT_SHOW, { data })
+      commit(types.FETCH_PACKAGE_SHOW, { data })
+    } catch (e) {
+      console.log(e)
+    }
+  },
+  async myPackageShow({ commit }, id) {
+    try {
+      const { data } = await axios.get(`/api/packages/list/${id}`)
+      commit(types.FETCH_MYPACKAGESHOW, { data })
     } catch (e) {
       console.log(e)
     }

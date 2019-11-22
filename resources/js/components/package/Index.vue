@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container my-3">
       <head-bar title="แพคเกจการเช่าสินค้า" to="packages" />
       <div class="row">
         <div class="col-md-4" v-for="(packagex, index) in packages" :key="index">
@@ -23,7 +23,7 @@
     </div>
   </div>
 </template>
-  
+
 <script>
 import PackageCard from "./Card";
 import Payment from "../payment/Index";

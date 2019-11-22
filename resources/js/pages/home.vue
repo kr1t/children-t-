@@ -2,7 +2,7 @@
   <div>
     <banner style="margin-top: -16px;" />
     <package-app />
-    <category />
+    <!-- <category /> -->
     <step />
     <product />
   </div>
