@@ -30,7 +30,7 @@
             <td>{{item.expiry_date}}</td>
             <td>{{item.lists.length}}/{{item.package.limit}}</td>
             <td>{{item.expire ? 'หมดอายุ':'ยังไม่หมดอายุ'}}</td>
-            <td v-if="product_id">
+            <td v-if="product_id && !item.expire">
               <button
                 class="btn btn-primary"
                 @click="add(item.id)"
