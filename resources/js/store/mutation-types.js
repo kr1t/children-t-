@@ -14,8 +14,9 @@ export const SET_LOCALE = "SET_LOCALE"
 export const FETCH_CAT = "FETCH_CAT"
 export const FETCH_CAT_SHOW = "FETCH_CAT_SHOW"
 
-export const FETCH_PACKAGE = "FETCH_CAT"
-export const FETCH_PACKAGE_SHOW = "FETCH_CAT_SHOW"
+export const FETCH_PACKAGE = "FETCH_PACKAGE"
+export const FETCH_MYPACKAGE = "FETCH_MYPACKAGE"
+export const FETCH_PACKAGE_SHOW = "FETCH_PACKAGE_SHOW"
 
 export const FETCH_CART = "FETCH_CART"
 

@@ -35,7 +35,8 @@ class PackageListRentProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $plrp = PackageListRentProduct::create($request->all());
+        return $plrp;
     }
 
     /**

@@ -21,34 +21,68 @@
           <h1>{{ product.name}}</h1>
           <hr />
 
-          <div class="price-text">
-            <div v-if="!priceActive">
-              <span class="text-secondary">เริ่มต้น</span>
-              <span class="h2 text-success">{{product.price}} ฿</span>
-            </div>
-            <div v-else>
-              <span class="text-secondary">ราคา</span>
-              <span class="h2 text-success">{{product.prices[priceActive].price}} ฿</span>
-            </div>
-          </div>
-
           <div class="price-list py-2">
             <button
-              v-for="(price,index) in product.prices"
-              :key="price.id"
+              v-for="(amount,index) in product.amounts"
+              :key="amount.id"
               class="btn m-1"
-              :class="priceActive == index ? 'btn-success' : 'btn-outline-secondary'"
-              @click="setPrice(index)"
-            >{{ price.description }}</button>
+              :class="amountActive == index ? 'btn-success' : 'btn-outline-secondary'"
+              @click="setAmount(index)"
+            >{{ amount.name }}</button>
           </div>
 
-          <div>เหลือ {{ product.amount.amount }} ชิ้น</div>
-          <div class="mt-3">
-            <hr />
-            <form @submit.prevent="addTocart()" @keydown="form.onKeydown($event)">
-              <input type="number" v-model="form.amount" />
-              <v-button :loading="form.busy">เพิ่มสินค้าลงตะกร้า</v-button>
-            </form>
+          <b-button v-b-modal.addPackage variant="primary">เพิ่มสินค้าเข้าแพ็คเกจ</b-button>&nbsp;หรือ
+          <router-link to="/home">
+            <button class="btn btn-success">ซื้อแพ็คเกจ</button>
+          </router-link>
+
+          <b-modal id="addPackage" hide-footer hide-header scrollable size="xl">
+            <p class="my-4">
+              <MyPackagePage
+                :product_id="product.id"
+                :product_amount_id="product.amounts[amountActive].id"
+              />
+            </p>
+          </b-modal>
+
+          <hr />
+
+          <button
+            class="btn btn-outline-secondary"
+            @click="showBuy = 1"
+            v-if="!showBuy"
+          >หรือซื้อสินค้า</button>
+
+          <div class="showBuy" v-else>
+            <div class="price-text">
+              <div v-if="!priceActive">
+                <span class="text-secondary">เริ่มต้น</span>
+                <span class="h2 text-success">{{product.price}} ฿</span>
+              </div>
+              <div v-else>
+                <span class="text-secondary">ราคา</span>
+                <span class="h2 text-success">{{product.prices[priceActive].price}} ฿</span>
+              </div>
+            </div>
+
+            <div class="price-list py-2">
+              <button
+                v-for="(price,index) in product.prices"
+                :key="price.id"
+                class="btn m-1"
+                :class="priceActive == index ? 'btn-success' : 'btn-outline-secondary'"
+                @click="setPrice(index)"
+              >{{ price.description }}</button>
+            </div>
+
+            <div>เหลือ {{ product.amount.amount }} ชิ้น</div>
+            <div class="mt-3">
+              <hr />
+              <form @submit.prevent="addTocart()" @keydown="form.onKeydown($event)">
+                <input type="number" v-model="form.amount" />
+                <v-button :loading="form.busy">เพิ่มสินค้าลงตะกร้า</v-button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -66,17 +100,24 @@
 <script>
 import { mapActions, mapGetters } from "vuex";
 import Form from "vform";
+import MyPackagePage from "../myPackage/index";
 
 export default {
   data() {
     return {
       priceActive: 0,
+      amountActive: 0,
+
       form: new Form({
         product_amount_id: "",
         product_price_id: "",
         amount: 1
-      })
+      }),
+      showBuy: 0
     };
+  },
+  components: {
+    MyPackagePage
   },
   computed: {
     ...mapGetters({
@@ -92,6 +133,9 @@ export default {
     }),
     setPrice(index) {
       this.priceActive = index;
+    },
+    setAmount(index) {
+      this.amountActive = index;
     },
     async addTocart() {
       this.form.product_price_id = this.product.prices[this.priceActive].id;
